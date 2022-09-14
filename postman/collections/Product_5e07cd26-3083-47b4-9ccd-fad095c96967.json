@@ -1,0 +1,2069 @@
+{
+	"info": {
+		"_postman_id": "18ef5d89-f73d-42ab-8bb7-28fb2f20a5c0",
+		"name": "Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Product Brand",
+			"id": "8ee8dce1-7164-4b85-af7e-52bc5fceffce",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/productbrand/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productbrand",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "1550ce28-39a1-4e21-9479-a8ab578d9643",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productbrand/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productbrand",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 03:51:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663041118.206449"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663041118.206449"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"product_brand\": [\n            {\n                \"id\": \"PB-00000000003\",\n                \"name\": \"Pepsodent\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-13 09:41:58\",\n                \"created_at\": \"2022-09-13 09:41:58\",\n                \"updated_at\": \"2022-09-13 09:41:58\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"PB-00000000004\",\n                \"name\": \"Pepsodent\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-13 09:43:08\",\n                \"created_at\": \"2022-09-13 09:43:08\",\n                \"updated_at\": \"2022-09-13 09:43:08\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"PB-00000000005\",\n                \"name\": \"Pepsodent\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-13 10:45:39\",\n                \"created_at\": \"2022-09-13 10:45:39\",\n                \"updated_at\": \"2022-09-13 10:45:39\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"PB-00000000006\",\n                \"name\": \"Pepsodent\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-13 10:48:42\",\n                \"created_at\": \"2022-09-13 10:48:42\",\n                \"updated_at\": \"2022-09-13 10:48:42\",\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+				},
+				{
+					"id": "b240164c-3bda-414b-8e17-22c17beb568f",
+					"name": "404",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productbrand/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productbrand",
+								""
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\r\n    \"status\": 404,\r\n    \"message\": \"Data tidak ditemukan\",\r\n    \"data\": []\r\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Product Brand",
+			"id": "ec1d3c06-e8fe-44d9-9fd9-61aec1b34f8b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/productbrand/PB-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productbrand",
+						"PB-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "c6904d90-2b21-4b91-a05b-f25592a14e56",
+					"name": "404",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productbrand/PB-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productbrand",
+								"PB-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:04:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663041841.077581"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663041841.077581"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 404,\n    \"message\": \"Data tidak ditemukan\",\n    \"data\": []\n}"
+				},
+				{
+					"id": "2637efe3-739f-468c-ba3d-95f3a0aa47fe",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productbrand/PB-00000000004",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productbrand",
+								"PB-00000000004"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 07:57:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663055832.628686"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663055832.628686"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data product brand by id\",\n    \"data\": {\n        \"product_brand\": {\n            \"id\": \"PB-00000000004\",\n            \"name\": \"Pepsodent\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"updatetimestamp\": \"2022-09-13 09:43:08\",\n            \"created_at\": \"2022-09-13 09:43:08\",\n            \"updated_at\": \"2022-09-13 09:43:08\",\n            \"deleted_at\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Product Brand",
+			"id": "1c9790ee-0cc7-4ce8-aca2-b63830473dd1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Pepsodent\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/productbrand/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productbrand",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "e146921b-4c28-438c-92ad-07cb1aea28c8",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Pepsodent\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productbrand/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productbrand",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 03:48:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663040922.878605"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663040922.878605"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Product brand berhasil ditambah\",\n    \"data\": {\n        \"name\": \"Pepsodent\",\n        \"id\": \"PB-00000000006\"\n    }\n}"
+				},
+				{
+					"id": "f7834c27-67ff-441f-97ac-04a2b497eb49",
+					"name": "200 (validation error)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productbrand/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productbrand",
+								""
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 07:59:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663055949.808122"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663055949.808122"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 500,\n    \"message\": \"Validasi error\",\n    \"data\": {\n        \"name\": \"Nama Brand Harus di isi\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Product Brand",
+			"id": "7ab40991-7365-4a5c-80bf-decfff7d7b03",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Pepsodent\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/productbrand/PB-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productbrand",
+						"PB-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "86156904-e365-4aa2-a708-637fb4f60733",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Pepsodent\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productbrand/PB-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productbrand",
+								"PB-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:04:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663041851.465568"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663041851.465568"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Product brand berhasil diubah\",\n    \"data\": {\n        \"name\": \"Pepsodent\",\n        \"id\": \"PB-00000000002\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Product Brand",
+			"id": "714a7b89-cd73-484d-a91c-4bd17fd2e4ba",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/productbrand/PB-00000000003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productbrand",
+						"PB-00000000003"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "f2cbd31b-cf36-4995-8057-ab38e19db335",
+					"name": "404",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productbrand/PB-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productbrand",
+								"PB-00000000002"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:04:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663041860.031612"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663041860.031612"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 404,\n    \"message\": \"Product brand dengan id PB-00000000002 tidak ditemukan atau sudah dihapus\",\n    \"data\": []\n}"
+				},
+				{
+					"id": "f83a6f1a-35db-402a-9881-6fd60afc8ec3",
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productbrand/PB-00000000003",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productbrand",
+								"PB-00000000003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:29:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663043378.922084"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663043378.922084"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Product brand berhasil dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Product Group",
+			"id": "ec727e57-b7cc-4d69-a076-0cfc5d151107",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/productgroup/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productgroup",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "13a1b495-497c-43e1-967c-11b1238f9e49",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productgroup/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productgroup",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:04:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663041872.586456"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663041872.586456"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"product_group\": [\n            {\n                \"id\": \"PG-00000000002\",\n                \"name\": \"Shampo\",\n                \"parent\": \"\",\n                \"isgroup\": \"0\",\n                \"salesdiscrules\": \"\",\n                \"salesmancommrules\": \"\",\n                \"salesproductrewardrules\": \"\",\n                \"salespointrewardrules\": \"\",\n                \"servicedoercommrules\": \"\",\n                \"inventoryacc\": \"\",\n                \"taxacc\": \"\",\n                \"cogsacc\": \"\",\n                \"salesacc\": \"\",\n                \"salesdiscacc\": \"\",\n                \"salesreturnacc\": \"\",\n                \"consignrevenueacc\": \"\",\n                \"consignexpenseacc\": \"\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-13 09:28:59\",\n                \"created_at\": \"2022-09-13 09:28:59\",\n                \"updated_at\": \"2022-09-13 09:28:59\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"PG-00000000003\",\n                \"name\": \"Shampo\",\n                \"parent\": \"\",\n                \"isgroup\": \"0\",\n                \"salesdiscrules\": \"\",\n                \"salesmancommrules\": \"\",\n                \"salesproductrewardrules\": \"\",\n                \"salespointrewardrules\": \"\",\n                \"servicedoercommrules\": \"\",\n                \"inventoryacc\": \"\",\n                \"taxacc\": \"\",\n                \"cogsacc\": \"\",\n                \"salesacc\": \"\",\n                \"salesdiscacc\": \"\",\n                \"salesreturnacc\": \"\",\n                \"consignrevenueacc\": \"\",\n                \"consignexpenseacc\": \"\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-13 09:42:00\",\n                \"created_at\": \"2022-09-13 09:42:00\",\n                \"updated_at\": \"2022-09-13 09:42:00\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"PG-00000000004\",\n                \"name\": \"Shampo\",\n                \"parent\": \"\",\n                \"isgroup\": \"0\",\n                \"salesdiscrules\": \"\",\n                \"salesmancommrules\": \"\",\n                \"salesproductrewardrules\": \"\",\n                \"salespointrewardrules\": \"\",\n                \"servicedoercommrules\": \"\",\n                \"inventoryacc\": \"\",\n                \"taxacc\": \"\",\n                \"cogsacc\": \"\",\n                \"salesacc\": \"\",\n                \"salesdiscacc\": \"\",\n                \"salesreturnacc\": \"\",\n                \"consignrevenueacc\": \"\",\n                \"consignexpenseacc\": \"\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-13 09:43:09\",\n                \"created_at\": \"2022-09-13 09:43:09\",\n                \"updated_at\": \"2022-09-13 09:43:09\",\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Product Group",
+			"id": "72441a97-464e-4784-ac99-4bb4bcc40570",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/productgroup/PG-00000000003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productgroup",
+						"PG-00000000003"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "bcd956b3-8d96-4028-bb50-f6c68acb0614",
+					"name": "404",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productgroup/PG-00000000001",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productgroup",
+								"PG-00000000001"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:06:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663041985.265997"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663041985.265997"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 404,\n    \"message\": \"Data tidak ditemukan\",\n    \"data\": []\n}"
+				},
+				{
+					"id": "ae9d6e3a-f3c3-461a-b7a8-7a57ff0c18c4",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productgroup/PG-00000000003",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productgroup",
+								"PG-00000000003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:28:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663043334.684079"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663043334.684079"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data product brand by id\",\n    \"data\": {\n        \"product_group\": {\n            \"id\": \"PG-00000000003\",\n            \"name\": \"Shampo\",\n            \"parent\": \"\",\n            \"isgroup\": \"0\",\n            \"salesdiscrules\": \"\",\n            \"salesmancommrules\": \"\",\n            \"salesproductrewardrules\": \"\",\n            \"salespointrewardrules\": \"\",\n            \"servicedoercommrules\": \"\",\n            \"inventoryacc\": \"\",\n            \"taxacc\": \"\",\n            \"cogsacc\": \"\",\n            \"salesacc\": \"\",\n            \"salesdiscacc\": \"\",\n            \"salesreturnacc\": \"\",\n            \"consignrevenueacc\": \"\",\n            \"consignexpenseacc\": \"\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"updatetimestamp\": \"2022-09-13 09:42:00\",\n            \"created_at\": \"2022-09-13 09:42:00\",\n            \"updated_at\": \"2022-09-13 09:42:00\",\n            \"deleted_at\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Product Group",
+			"id": "4a6064b6-a874-4c4c-b4b9-9b549900e37d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Shampo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/productgroup/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productgroup",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "4208eb54-5e3b-454e-9f61-3f4a906d8174",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Shampo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productgroup/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productgroup",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:06:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663041992.368363"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663041992.368363"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Product group berhasil ditambah\",\n    \"data\": {\n        \"name\": \"Shampo\",\n        \"id\": \"PG-00000000005\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Product Group",
+			"id": "299818ae-90fd-4653-84f0-41df40d367fd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Pasta Gigi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/productgroup/PG-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productgroup",
+						"PG-00000000001"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "6bbd6ee0-b34c-4448-9e2f-17c55e513bbf",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Pasta Gigi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productgroup/PG-00000000001",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productgroup",
+								"PG-00000000001"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:06:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663041998.042609"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663041998.042609"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Product group berhasil diubah\",\n    \"data\": {\n        \"name\": \"Pasta Gigi\",\n        \"id\": \"PG-00000000001\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Product Group",
+			"id": "3ec983dc-344c-488d-86c5-c34db01f3191",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/productgroup/PG-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productgroup",
+						"PG-00000000001"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "354e3b4f-c1d8-4899-b99d-6066fe4afc3a",
+					"name": "404",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/productgroup/PG-00000000001",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"productgroup",
+								"PG-00000000001"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:06:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663042005.125370"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663042005.125370"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 404,\n    \"message\": \"Product group dengan id PG-00000000001 tidak ditemukan atau sudah dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Product",
+			"id": "b6115547-7b5f-43d1-9a71-955b19044636",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/product/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "c57b7c65-f40e-496f-9e0c-ffbf06a5d211",
+					"name": "404",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/product/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:06:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663042010.933499"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663042010.933499"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"product\": [\n            {\n                \"id\": \"PR-00000000001\",\n                \"aliasid\": \"Pepsodent D E\",\n                \"name\": \"Pepsodent Dental Expert\",\n                \"description\": \"\",\n                \"productgroup\": \"PG-00000000002\",\n                \"defunit\": \"UN-00000000003\",\n                \"groupunit\": \"UN-00000000003\",\n                \"supplier\": \"SP-00000000001\",\n                \"category\": \"0\",\n                \"factory\": \"\",\n                \"brand\": \"PB-00000000003\",\n                \"costprice\": \"0\",\n                \"purchasedisc\": \"0\",\n                \"purchasetax\": \"0\",\n                \"netpurchase\": \"0\",\n                \"salesprice1\": \"0\",\n                \"salesprice2\": \"0\",\n                \"salesprice3\": \"0\",\n                \"salesprice4\": \"0\",\n                \"salesprice5\": \"0\",\n                \"salesprice6\": \"0\",\n                \"salesprice7\": \"0\",\n                \"salesdiscqty1\": \"0\",\n                \"salesdiscprice1\": \"0\",\n                \"salesdiscqty2\": \"0\",\n                \"salesdiscprice2\": \"0\",\n                \"salesdiscqty3\": \"0\",\n                \"salesdiscprice3\": \"0\",\n                \"usesn\": \"1\",\n                \"minimum\": \"0\",\n                \"maximum\": \"0\",\n                \"minimumreorder\": \"0\",\n                \"defaultreorder\": \"0\",\n                \"salesdisc\": \"\",\n                \"taxtype\": \"0\",\n                \"author\": \"\",\n                \"dwidth\": \"0\",\n                \"dheight\": \"0\",\n                \"dlength\": \"0\",\n                \"weight\": \"0\",\n                \"salesdiscrules\": \"\",\n                \"salesmancommrules\": \"\",\n                \"salesproductrewardrules\": \"\",\n                \"salespointrewardrules\": \"\",\n                \"servicedoercommrules\": \"\",\n                \"inventoryacc\": \"\",\n                \"taxacc\": \"\",\n                \"cogsacc\": \"\",\n                \"salesacc\": \"\",\n                \"salesdiscacc\": \"\",\n                \"salesreturnacc\": \"\",\n                \"consignrevenueacc\": \"\",\n                \"consignexpenseacc\": \"\",\n                \"isactive\": \"1\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-13 10:32:11\",\n                \"image\": null,\n                \"created_at\": \"2022-09-13 10:26:17\",\n                \"updated_at\": \"2022-09-13 10:32:11\",\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Product",
+			"id": "3783e038-1860-455d-8ffb-5af7ef37759b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/product/PR-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"PR-00000000001"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3104db63-725d-4814-a755-b6583ce60a2e",
+					"name": "404",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/product/PR-00000000001",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"PR-00000000001"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:07:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663042021.392798"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663042021.392798"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data product by id\",\n    \"data\": {\n        \"product\": {\n            \"id\": \"PR-00000000001\",\n            \"aliasid\": \"Pepsodent D E\",\n            \"name\": \"Pepsodent Dental Expert\",\n            \"description\": \"\",\n            \"productgroup\": \"PG-00000000002\",\n            \"defunit\": \"UN-00000000003\",\n            \"groupunit\": \"UN-00000000003\",\n            \"supplier\": \"SP-00000000001\",\n            \"category\": \"0\",\n            \"factory\": \"\",\n            \"brand\": \"PB-00000000003\",\n            \"costprice\": \"0\",\n            \"purchasedisc\": \"0\",\n            \"purchasetax\": \"0\",\n            \"netpurchase\": \"0\",\n            \"salesprice1\": \"0\",\n            \"salesprice2\": \"0\",\n            \"salesprice3\": \"0\",\n            \"salesprice4\": \"0\",\n            \"salesprice5\": \"0\",\n            \"salesprice6\": \"0\",\n            \"salesprice7\": \"0\",\n            \"salesdiscqty1\": \"0\",\n            \"salesdiscprice1\": \"0\",\n            \"salesdiscqty2\": \"0\",\n            \"salesdiscprice2\": \"0\",\n            \"salesdiscqty3\": \"0\",\n            \"salesdiscprice3\": \"0\",\n            \"usesn\": \"1\",\n            \"minimum\": \"0\",\n            \"maximum\": \"0\",\n            \"minimumreorder\": \"0\",\n            \"defaultreorder\": \"0\",\n            \"salesdisc\": \"\",\n            \"taxtype\": \"0\",\n            \"author\": \"\",\n            \"dwidth\": \"0\",\n            \"dheight\": \"0\",\n            \"dlength\": \"0\",\n            \"weight\": \"0\",\n            \"salesdiscrules\": \"\",\n            \"salesmancommrules\": \"\",\n            \"salesproductrewardrules\": \"\",\n            \"salespointrewardrules\": \"\",\n            \"servicedoercommrules\": \"\",\n            \"inventoryacc\": \"\",\n            \"taxacc\": \"\",\n            \"cogsacc\": \"\",\n            \"salesacc\": \"\",\n            \"salesdiscacc\": \"\",\n            \"salesreturnacc\": \"\",\n            \"consignrevenueacc\": \"\",\n            \"consignexpenseacc\": \"\",\n            \"isactive\": \"1\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"updatetimestamp\": \"2022-09-13 10:32:11\",\n            \"image\": null,\n            \"created_at\": \"2022-09-13 10:26:17\",\n            \"updated_at\": \"2022-09-13 10:32:11\",\n            \"deleted_at\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Product",
+			"id": "4851a0b6-1208-49bd-9d75-7ea900b2e3b0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Pepsodent Dental Expert\",\r\n    \"groupunit\":\"UN-00000000003\",\r\n    \"defunit\":\"UN-00000000003\",\r\n    \"productgroup\":\"PG-00000000002\",\r\n    \"supplier\":\"SP-00000000001\",\r\n    \"brand\":\"PB-00000000003\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/product/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "18ff2f75-62a7-4114-a32b-7389fd4bf571",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Pepsodent Dental Expert\",\r\n    \"groupunit\":\"UN-00000000003\",\r\n    \"defunit\":\"UN-00000000003\",\r\n    \"productgroup\":\"PG-00000000002\",\r\n    \"supplier\":\"SP-00000000001\",\r\n    \"brand\":\"PB-00000000003\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/product/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:07:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663042030.112936"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663042030.112936"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Product berhasil ditambah\",\n    \"data\": {\n        \"name\": \"Pepsodent Dental Expert\",\n        \"groupunit\": \"UN-00000000003\",\n        \"defunit\": \"UN-00000000003\",\n        \"productgroup\": \"PG-00000000002\",\n        \"supplier\": \"SP-00000000001\",\n        \"brand\": \"PB-00000000003\",\n        \"id\": \"PR-00000000003\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Product",
+			"id": "976507c6-c35b-478f-8955-3574d464bd5b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Pepsodent Dental Expert\",\r\n    \"groupunit\":\"UN-00000000003\",\r\n    \"defunit\":\"UN-00000000003\",\r\n    \"productgroup\":\"PG-00000000002\",\r\n    \"supplier\":\"SP-00000000001\",\r\n    \"brand\":\"PB-00000000003\",\r\n    \"aliasid\": \"Pepsodent D E\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/product/PR-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"PR-00000000001"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "80ccb870-f8eb-4338-9cb9-390e7794ed4d",
+					"name": "404",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Pepsodent Dental Expert\",\r\n    \"groupunit\":\"UN-00000000003\",\r\n    \"defunit\":\"UN-00000000003\",\r\n    \"productgroup\":\"PG-00000000002\",\r\n    \"supplier\":\"SP-00000000001\",\r\n    \"brand\":\"PB-00000000003\",\r\n    \"aliasid\": \"Pepsodent D E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/product/PR-00000000001",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"PR-00000000001"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:07:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663042037.989318"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663042037.989318"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Produk berhasil diubah\",\n    \"data\": {\n        \"name\": \"Pepsodent Dental Expert\",\n        \"groupunit\": \"UN-00000000003\",\n        \"defunit\": \"UN-00000000003\",\n        \"productgroup\": \"PG-00000000002\",\n        \"supplier\": \"SP-00000000001\",\n        \"brand\": \"PB-00000000003\",\n        \"aliasid\": \"Pepsodent D E\",\n        \"id\": \"PR-00000000001\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Product",
+			"id": "f318a45b-7326-4ed9-9f3c-a42631dbcd9f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/product/PR-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"PR-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "ba91506c-c4f1-40ab-9734-18651b50cd6d",
+					"name": "404",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/product/PR-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"PR-00000000002"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 04:07:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663042045.440340"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663042045.440340"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 404,\n    \"message\": \"Produk dengan id PR-00000000002 tidak ditemukan atau sudah dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		}
+	]
+}
