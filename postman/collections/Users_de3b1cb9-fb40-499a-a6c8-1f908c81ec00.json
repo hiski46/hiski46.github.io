@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "41bf0300-cc79-4037-bbc6-d3b7911f088d",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Alll Users",
+			"id": "73d5c305-4288-4464-b2fc-ad44564f0a4b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3a02e11b1f651427bced2bbfce76fcb1fce0fc5c6a7988a5ca882946fee4706d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Users",
+			"id": "1fe087cf-e32e-470e-a934-53c9f5b63bf0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ad672786ed2b8dec99341396616096c8df90a85f859dec072820a7df8f91cde",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/users/3",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Users",
+			"id": "7f933961-115a-44f6-a4e2-3cffa510f435",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "544603a0643c710829cac69537c490541fbb0e61b61e8d3ecfbe4591021b8832",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Anggi11111\",\r\n    \"username\": \"anggi11111\",\r\n    \"email\": \"anggi11111@gmail.com\",\r\n    \"password\": \"anggi@123\",\r\n    \"description\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Users",
+			"id": "54d34d47-25f7-406f-9368-764e1cd7586b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "896ae46b708258386607074085cac91772325842ec13ad830d11c07546fa56c0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/users/1/edit",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"1",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Users",
+			"id": "d1694d96-6518-4c47-aeaa-b121ea098c21",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ff873489e1b0acf253a657f360b6b624b2ba129a0c6bae5651b965afed030487",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ade Rahman\",\r\n    \"username\": \"jabrik\",\r\n    \"email\": \"jabrik3111@gmail.com\",\r\n    \"password\": \"jabrik@123\",\r\n    \"description\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/users/1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Users",
+			"id": "d4dc8780-8d0a-4015-9a5d-851c179b0f1e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3a02e11b1f651427bced2bbfce76fcb1fce0fc5c6a7988a5ca882946fee4706d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/users/6",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Permission User",
+			"id": "cdba6136-de9e-4b1d-9f97-b34ec1b06777",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Group User",
+			"id": "0f7255d6-f63f-4ac6-a009-d65a3563077f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add Users to Group",
+			"id": "954cfba1-4208-464b-91ff-32a33b220153",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Users to Group",
+			"id": "98c43040-63b9-4f9f-a140-d40784469b88",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add Permission to user",
+			"id": "5c19e8e6-7732-40a6-94be-f0585a012738",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Permission from user",
+			"id": "f4af87fd-2e47-49d4-9be3-0ac969a77ee6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

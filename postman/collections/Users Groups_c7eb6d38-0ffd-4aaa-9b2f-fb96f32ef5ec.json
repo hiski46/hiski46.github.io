@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "8615dd9f-fcb0-41e9-9b34-3f1e51e0f872",
+		"name": "Users Groups",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Users Group",
+			"id": "026e1ca4-f261-45a9-9df4-548640147d96",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7d67ac89e7c59a546734f838f78c301e1cd9e02747e062d8aba0eabd7ceaac11",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/usersgroups",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usersgroups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Users Group",
+			"id": "43bcbb44-f838-4501-b82d-63a285dd1b2c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "896ae46b708258386607074085cac91772325842ec13ad830d11c07546fa56c0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/usersgroups/1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usersgroups",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Users Group",
+			"id": "e5ab5f6c-0fbb-4a5e-b9bb-d0116a1562c9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "896ae46b708258386607074085cac91772325842ec13ad830d11c07546fa56c0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/usersgroups/1/edit",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usersgroups",
+						"1",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Users Group",
+			"id": "85ffc84a-6a3b-4d1c-a14a-04ad6858dc44",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "896ae46b708258386607074085cac91772325842ec13ad830d11c07546fa56c0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"group_name\":\"users\",\r\n    \"title\": \"users admin\",\r\n    \"description\": \"Complete control of the site.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/usersgroups",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usersgroups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Users Group",
+			"id": "63bc714b-f4d8-483b-a6fa-cc6c1711a94a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "896ae46b708258386607074085cac91772325842ec13ad830d11c07546fa56c0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"group_name\":\"admin\",\r\n    \"title\": \"group admin\",\r\n    \"description\": \"Complete control of the site.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/usersgroups/3",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usersgroups",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "1401a27d-1e62-4c73-b360-4a28ed7c7d22",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"group_name\":\"admin\",\r\n    \"title\": \"group admin\",\r\n    \"description\": \"Complete control of the site.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.238:8080/api/v1/usersgroups/2",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"238"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usersgroups",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.238:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Sep 2022 03:20:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663557618.949319"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.238:8080/?debugbar_time=1663557618.949319"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data berhasil di update\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Users Group",
+			"id": "7db4d19d-f177-475e-bd81-eb44af22dbd0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "896ae46b708258386607074085cac91772325842ec13ad830d11c07546fa56c0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/usersgroups/1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usersgroups",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1152 @@
+{
+	"info": {
+		"_postman_id": "970ade2e-83ea-433f-92f6-5e4f403d1b25",
+		"name": "Customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Customer Group",
+			"id": "7b884f43-4089-4b14-831a-c14da5dcb437",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/customergroup",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customergroup"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "f467bcf8-2402-4815-9cd8-888faafa8968",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\" : \"Group Customer 1\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.001\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/customergroup",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"customergroup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 03:19:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663211974.544403"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663211974.544403"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"customergroup\": [\n            {\n                \"id\": \"c1\",\n                \"description\": \"PELANGGAN GROSIR\",\n                \"parent\": \"\",\n                \"isgroup\": \"1\",\n                \"salesdiscrules\": \"\",\n                \"salesproductrewardrules\": \"\",\n                \"salespointrewardrules\": \"\",\n                \"paymentdiscrules\": \"\",\n                \"receivableacc\": \"104.002\",\n                \"rewardacc\": \"601.002\",\n                \"downpaymentacc\": \"20.005\",\n                \"salesdiscacc\": \"409.001\",\n                \"gainlossreceivableacc\": \"701.005\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"c11\",\n                \"description\": \"GROSIR AREA 1\",\n                \"parent\": \"c1\",\n                \"isgroup\": \"0\",\n                \"salesdiscrules\": \"1;2\",\n                \"salesproductrewardrules\": \"\",\n                \"salespointrewardrules\": \"\",\n                \"paymentdiscrules\": \"\",\n                \"receivableacc\": \"104.002\",\n                \"rewardacc\": \"601.002\",\n                \"downpaymentacc\": \"20.005\",\n                \"salesdiscacc\": \"409.002\",\n                \"gainlossreceivableacc\": \"701.005\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"c12\",\n                \"description\": \"GROSIR AREA 2\",\n                \"parent\": \"c1\",\n                \"isgroup\": \"0\",\n                \"salesdiscrules\": \"\",\n                \"salesproductrewardrules\": \"\",\n                \"salespointrewardrules\": \"\",\n                \"paymentdiscrules\": \"\",\n                \"receivableacc\": \"104.003\",\n                \"rewardacc\": \"601.002\",\n                \"downpaymentacc\": \"20.005\",\n                \"salesdiscacc\": \"409.003\",\n                \"gainlossreceivableacc\": \"701.005\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"c13\",\n                \"description\": \"GROSIR AREA 3\",\n                \"parent\": \"c1\",\n                \"isgroup\": \"0\",\n                \"salesdiscrules\": \"\",\n                \"salesproductrewardrules\": \"\",\n                \"salespointrewardrules\": \"\",\n                \"paymentdiscrules\": \"\",\n                \"receivableacc\": \"104.004\",\n                \"rewardacc\": \"601.002\",\n                \"downpaymentacc\": \"20.005\",\n                \"salesdiscacc\": \"409.004\",\n                \"gainlossreceivableacc\": \"701.005\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"c2\",\n                \"description\": \"PELANGGAN TUNAI\",\n                \"parent\": \"\",\n                \"isgroup\": \"1\",\n                \"salesdiscrules\": \"\",\n                \"salesproductrewardrules\": \"\",\n                \"salespointrewardrules\": \"\",\n                \"paymentdiscrules\": \"\",\n                \"receivableacc\": \"104.001\",\n                \"rewardacc\": \"601.002\",\n                \"downpaymentacc\": \"20.005\",\n                \"salesdiscacc\": \"409.001\",\n                \"gainlossreceivableacc\": \"701.005\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"c21\",\n                \"description\": \"TUNAI AREA 1\",\n                \"parent\": \"c2\",\n                \"isgroup\": \"0\",\n                \"salesdiscrules\": \"\",\n                \"salesproductrewardrules\": \"\",\n                \"salespointrewardrules\": \"\",\n                \"paymentdiscrules\": \"\",\n                \"receivableacc\": \"104.001\",\n                \"rewardacc\": \"601.002\",\n                \"downpaymentacc\": \"20.005\",\n                \"salesdiscacc\": \"409.002\",\n                \"gainlossreceivableacc\": \"701.005\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"c22\",\n                \"description\": \"TUNAI AREA 2\",\n                \"parent\": \"c2\",\n                \"isgroup\": \"0\",\n                \"salesdiscrules\": \"\",\n                \"salesproductrewardrules\": \"\",\n                \"salespointrewardrules\": \"\",\n                \"paymentdiscrules\": \"\",\n                \"receivableacc\": \"104.001\",\n                \"rewardacc\": \"601.002\",\n                \"downpaymentacc\": \"20.005\",\n                \"salesdiscacc\": \"409.003\",\n                \"gainlossreceivableacc\": \"701.005\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Customer",
+			"id": "9e9570eb-c667-407c-81bc-d748ca2d226b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\" : \"Group Customer 1\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.001\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/customergroup",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customergroup"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "2009e3de-21a3-45eb-877b-0f7fcd6fe14f",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\" : \"Group Customer 1\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.001\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/customergroup",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"customergroup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 04:25:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663215941.218993"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663215941.218993"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Customer Group berhasil ditambah\",\n    \"data\": {\n        \"description\": \"Group Customer 1\",\n        \"receivableacc\": \"104.002\",\n        \"rewardacc\": \"601.002\",\n        \"downpaymentacc\": \"20.005\",\n        \"salesdiscacc\": \"409.001\",\n        \"gainlossreceivableacc\": \"701.005\",\n        \"id\": \"CSTG-00000000001\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Customer Group",
+			"id": "27424928-468a-4ea5-90a5-d0f6e06016f5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/customergroup/CSTG-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customergroup",
+						"CSTG-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "7739f403-bbef-40e9-9ea2-bb309bd2a6c1",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/customergroup/CSTG-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"customergroup",
+								"CSTG-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 04:27:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663216064.774197"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663216064.774197"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data customer group by id\",\n    \"data\": {\n        \"customergroup\": {\n            \"id\": \"CSTG-00000000002\",\n            \"description\": \"Group Customer 2\",\n            \"parent\": \"\",\n            \"isgroup\": \"0\",\n            \"salesdiscrules\": \"\",\n            \"salesproductrewardrules\": \"\",\n            \"salespointrewardrules\": \"\",\n            \"paymentdiscrules\": \"\",\n            \"receivableacc\": \"104.002\",\n            \"rewardacc\": \"601.002\",\n            \"downpaymentacc\": \"20.005\",\n            \"salesdiscacc\": \"409.001\",\n            \"gainlossreceivableacc\": \"701.005\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"updatetimestamp\": \"2022-09-15 11:26:49\",\n            \"created_at\": \"2022-09-15 11:26:49\",\n            \"updated_at\": \"2022-09-15 11:26:49\",\n            \"deleted_at\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Customer Group",
+			"id": "55ebb433-80ba-432e-a590-bcddd2603e5e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\" : \"Group Customer dua\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.001\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/customergroup/CSTG-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customergroup",
+						"CSTG-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "a54e208f-7f08-4c6e-96db-861f4b3807fe",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\" : \"Group Customer dua\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.001\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/customergroup/CSTG-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"customergroup",
+								"CSTG-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 04:28:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663216138.221836"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663216138.221836"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Customer Group berhasil diubah\",\n    \"data\": {\n        \"description\": \"Group Customer dua\",\n        \"receivableacc\": \"104.002\",\n        \"rewardacc\": \"601.002\",\n        \"downpaymentacc\": \"20.005\",\n        \"salesdiscacc\": \"409.001\",\n        \"gainlossreceivableacc\": \"701.005\",\n        \"id\": \"CSTG-00000000003\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Customer Group",
+			"id": "bef04512-f937-46f9-9340-35469b2ca39d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/customergroup/CSTG-00000000003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customergroup",
+						"CSTG-00000000003"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "53305844-722e-4cb6-9603-ff3d27159a05",
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/customergroup/CSTG-00000000003",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"customergroup",
+								"CSTG-00000000003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 04:31:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663216263.204942"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663216263.204942"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Customer Group berhasil dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Customer",
+			"id": "f30e3a7d-6aba-42ca-ab1d-03691fb2c71e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/customer",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customer"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "2571699b-df3f-4cfd-90ef-0c86abdd12d8",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/customer",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"customer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 04:44:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663217097.153088"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663217097.153088"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"customer\": [\n            {\n                \"id\": \"C001\",\n                \"name\": \"PELANGGAN A\",\n                \"customergroup\": \"c11\",\n                \"address\": \"\",\n                \"shipto\": null,\n                \"telephone\": \"\",\n                \"faximile\": \"\",\n                \"mobilephone\": \"\",\n                \"category\": \"0\",\n                \"contactperson\": \"\",\n                \"religion\": \"0\",\n                \"birthdate\": null,\n                \"sex\": \"0\",\n                \"email\": \"\",\n                \"website\": \"\",\n                \"country\": \"IDN\",\n                \"creditlimit\": \"0\",\n                \"creditlimittype\": \"0\",\n                \"registerdate\": \"2010-07-12 11:11:38\",\n                \"activeuntil\": \"2099-12-31 00:00:00\",\n                \"taxid\": \"\",\n                \"taxiddate\": null,\n                \"taxable\": \"0\",\n                \"termofpayment\": \"\",\n                \"isactive\": \"1\",\n                \"defsalesmanid\": \"\",\n                \"salesdiscrules\": \"1;2\",\n                \"salesproductrewardrules\": \"1\",\n                \"salespointrewardrules\": \"1;2\",\n                \"paymentdiscrules\": \"\",\n                \"receivableacc\": \"104.002\",\n                \"rewardacc\": \"601.002\",\n                \"downpaymentacc\": \"20.005\",\n                \"salesdiscacc\": \"409.002\",\n                \"gainlossreceivableacc\": \"701.005\",\n                \"point\": \"0\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"pricelevel\": \"1\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"image\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"C002\",\n                \"name\": \"PELANGGAN B\",\n                \"customergroup\": \"c11\",\n                \"address\": \"\",\n                \"shipto\": null,\n                \"telephone\": \"\",\n                \"faximile\": \"\",\n                \"mobilephone\": \"\",\n                \"category\": \"0\",\n                \"contactperson\": \"\",\n                \"religion\": \"0\",\n                \"birthdate\": null,\n                \"sex\": \"0\",\n                \"email\": \"\",\n                \"website\": \"\",\n                \"country\": \"IDN\",\n                \"creditlimit\": \"0\",\n                \"creditlimittype\": \"0\",\n                \"registerdate\": \"2010-07-12 11:11:38\",\n                \"activeuntil\": \"2099-12-31 00:00:00\",\n                \"taxid\": \"\",\n                \"taxiddate\": null,\n                \"taxable\": \"0\",\n                \"termofpayment\": \"\",\n                \"isactive\": \"1\",\n                \"defsalesmanid\": \"\",\n                \"salesdiscrules\": \"1;2\",\n                \"salesproductrewardrules\": \"1;2\",\n                \"salespointrewardrules\": \"\",\n                \"paymentdiscrules\": \"\",\n                \"receivableacc\": \"104.002\",\n                \"rewardacc\": \"601.002\",\n                \"downpaymentacc\": \"20.005\",\n                \"salesdiscacc\": \"409.002\",\n                \"gainlossreceivableacc\": \"701.005\",\n                \"point\": \"0\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"pricelevel\": \"1\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"image\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"C201\",\n                \"name\": \"TUNAI\",\n                \"customergroup\": \"c21\",\n                \"address\": \"\",\n                \"shipto\": null,\n                \"telephone\": \"\",\n                \"faximile\": \"\",\n                \"mobilephone\": \"\",\n                \"category\": \"0\",\n                \"contactperson\": \"\",\n                \"religion\": \"0\",\n                \"birthdate\": null,\n                \"sex\": \"0\",\n                \"email\": \"\",\n                \"website\": \"\",\n                \"country\": \"IDN\",\n                \"creditlimit\": \"0\",\n                \"creditlimittype\": \"0\",\n                \"registerdate\": \"2010-07-12 11:11:38\",\n                \"activeuntil\": \"2099-12-31 00:00:00\",\n                \"taxid\": \"\",\n                \"taxiddate\": null,\n                \"taxable\": \"0\",\n                \"termofpayment\": \"\",\n                \"isactive\": \"1\",\n                \"defsalesmanid\": \"\",\n                \"salesdiscrules\": \"1\",\n                \"salesproductrewardrules\": \"1\",\n                \"salespointrewardrules\": \"1;2\",\n                \"paymentdiscrules\": \"1\",\n                \"receivableacc\": \"104.001\",\n                \"rewardacc\": \"601.002\",\n                \"downpaymentacc\": \"20.005\",\n                \"salesdiscacc\": \"409.002\",\n                \"gainlossreceivableacc\": \"701.005\",\n                \"point\": \"0\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"pricelevel\": \"1\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"image\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Customer",
+			"id": "4419cbc3-5e74-48c5-bc55-c5b50a5d04b1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Customer 2\",\r\n    \"customergroup\": \"CSTG-00000000001\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.002\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/customer",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customer"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "6139268d-469a-499c-b7d0-8ec2873b0fa7",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Customer 2\",\r\n    \"customergroup\": \"CSTG-00000000001\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.002\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/customer",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"customer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 04:48:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663217299.357040"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663217299.357040"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Customer berhasil ditambah\",\n    \"data\": {\n        \"name\": \"Customer 2\",\n        \"customergroup\": \"CSTG-00000000001\",\n        \"receivableacc\": \"104.002\",\n        \"rewardacc\": \"601.002\",\n        \"downpaymentacc\": \"20.005\",\n        \"salesdiscacc\": \"409.002\",\n        \"gainlossreceivableacc\": \"701.005\",\n        \"id\": \"CST-00000000002\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Customer",
+			"id": "d85e971c-3aa4-4c33-92f3-580bbb48c6de",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/customer/CST-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"CST-00000000001"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "b37a59fc-fbf7-4dba-864b-c6f2344bdafd",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/customer/CST-00000000001",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"CST-00000000001"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 04:50:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663217445.012134"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663217445.012134"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data customer by id\",\n    \"data\": {\n        \"customer\": {\n            \"id\": \"CST-00000000001\",\n            \"name\": \"Customer 1\",\n            \"customergroup\": \"CSTG-00000000001\",\n            \"address\": \"\",\n            \"shipto\": null,\n            \"telephone\": \"\",\n            \"faximile\": \"\",\n            \"mobilephone\": \"\",\n            \"category\": \"0\",\n            \"contactperson\": \"\",\n            \"religion\": \"0\",\n            \"birthdate\": null,\n            \"sex\": \"0\",\n            \"email\": \"\",\n            \"website\": \"\",\n            \"country\": \"\",\n            \"creditlimit\": \"0\",\n            \"creditlimittype\": \"0\",\n            \"registerdate\": null,\n            \"activeuntil\": \"2099-12-31 00:00:00\",\n            \"taxid\": \"\",\n            \"taxiddate\": null,\n            \"taxable\": \"0\",\n            \"termofpayment\": \"\",\n            \"isactive\": \"1\",\n            \"defsalesmanid\": \"\",\n            \"salesdiscrules\": \"\",\n            \"salesproductrewardrules\": \"\",\n            \"salespointrewardrules\": \"\",\n            \"paymentdiscrules\": \"\",\n            \"receivableacc\": \"104.002\",\n            \"rewardacc\": \"601.002\",\n            \"downpaymentacc\": \"20.005\",\n            \"salesdiscacc\": \"409.002\",\n            \"gainlossreceivableacc\": \"701.005\",\n            \"point\": \"0\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"pricelevel\": \"1\",\n            \"updatetimestamp\": \"2022-09-15 11:47:54\",\n            \"image\": null,\n            \"created_at\": \"2022-09-15 11:47:54\",\n            \"updated_at\": \"2022-09-15 11:47:54\",\n            \"deleted_at\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Customer",
+			"id": "bdcc820e-b5ac-499e-8c64-876fcbdc1856",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Customer satu\",\r\n    \"customergroup\": \"CSTG-00000000001\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.002\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/customer/CST-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"CST-00000000001"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "43f77634-be0f-451e-9e8f-7a4e29237b1a",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Customer satu\",\r\n    \"customergroup\": \"CSTG-00000000001\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.002\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/customer/CST-00000000001",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"CST-00000000001"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 04:52:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663217522.207889"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663217522.207889"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Customer berhasil diubah\",\n    \"data\": {\n        \"name\": \"Customer satu\",\n        \"customergroup\": \"CSTG-00000000001\",\n        \"receivableacc\": \"104.002\",\n        \"rewardacc\": \"601.002\",\n        \"downpaymentacc\": \"20.005\",\n        \"salesdiscacc\": \"409.002\",\n        \"gainlossreceivableacc\": \"701.005\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Customer",
+			"id": "4bc27b88-f4db-4938-ba08-dafff7e1dce5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/customer/CST-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"CST-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "c83990b3-a833-446b-a52d-51c552b32cd9",
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/customer/CST-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"CST-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 04:52:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663217569.056136"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663217569.056136"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Customer berhasil dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		}
+	]
+}

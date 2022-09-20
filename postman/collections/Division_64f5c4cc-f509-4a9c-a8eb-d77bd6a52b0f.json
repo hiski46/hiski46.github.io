@@ -1,0 +1,580 @@
+{
+	"info": {
+		"_postman_id": "ad535c54-9e60-43b7-af15-05f5732afd3d",
+		"name": "Division",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Division",
+			"id": "9f2fd429-4f59-4e3b-8cb8-e862c4ba5e90",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/division/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"division",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "0fc5091b-0074-4fcc-8223-c4205a02fcb6",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/division/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"division",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 07:06:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663225565.229862"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663225565.229862"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"division\": [\n            {\n                \"id\": \"D-00000000002\",\n                \"description\": \"Division 1\",\n                \"parent\": \"\",\n                \"isgroup\": \"0\",\n                \"acumsalesdisc\": \"1\",\n                \"updlastsalesmanidtocust\": \"0\",\n                \"frmsupplierdpid\": \"\",\n                \"frmpurchaserequisitionid\": \"\",\n                \"frmpurchaseorderid\": \"\",\n                \"frmgoodsreceiptid\": \"\",\n                \"frmpurchaseid\": \"\",\n                \"frmpurchasereturnid\": \"\",\n                \"frmpurchasepaymentid\": \"\",\n                \"frmpayableadjustid\": \"\",\n                \"frmcustomerdpid\": \"\",\n                \"frmsalesquoteid\": \"\",\n                \"frmsalesorderid\": \"\",\n                \"frmdeliveryorderid\": \"\",\n                \"frmsalesid\": \"\",\n                \"frmtaxid\": \"\",\n                \"frmsalesreturnid\": \"\",\n                \"frmsalespaymentid\": \"\",\n                \"frmreceivableadjustid\": \"\",\n                \"frminventoryid\": \"\",\n                \"frmjournalentryid\": \"\",\n                \"frmmanufactureid\": \"\",\n                \"frmpayrollid\": \"\",\n                \"supplierdpidno\": \"0\",\n                \"purchaserequisitionidno\": \"0\",\n                \"purchaseorderidno\": \"0\",\n                \"goodsreceiptidno\": \"0\",\n                \"purchaseidno\": \"0\",\n                \"purchasereturnidno\": \"0\",\n                \"purchasepaymentidno\": \"0\",\n                \"payableadjustidno\": \"0\",\n                \"customerdpidno\": \"0\",\n                \"salesquoteidno\": \"0\",\n                \"salesorderidno\": \"0\",\n                \"deliveryorderidno\": \"0\",\n                \"salesidno\": \"0\",\n                \"taxidno\": \"0\",\n                \"salesreturnidno\": \"0\",\n                \"salespaymentidno\": \"0\",\n                \"receivableadjustidno\": \"0\",\n                \"inventoryidno\": \"0\",\n                \"journalentryidno\": \"0\",\n                \"manufactureidno\": \"0\",\n                \"payrollidno\": \"0\",\n                \"retainedearningacc\": \"108.001\",\n                \"exchangerateacc\": \"101.002\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-15 13:58:47\",\n                \"created_at\": \"2022-09-15 13:58:47\",\n                \"updated_at\": \"2022-09-15 13:58:47\",\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Division",
+			"id": "c1315207-a383-4f80-8550-e699aef09a62",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"Division 3\",\r\n    \"retainedearningacc\":\"108.001\",\r\n    \"exchangerateacc\":\"101.002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/division/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"division",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "40f0a497-4490-48ca-b0f0-44c5bda92301",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"Division 3\",\r\n    \"retainedearningacc\":\"108.001\",\r\n    \"exchangerateacc\":\"101.002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/division/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"division",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 07:07:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663225641.851017"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663225641.851017"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Salesman Group berhasil ditambah\",\n    \"data\": {\n        \"description\": \"Division 3\",\n        \"retainedearningacc\": \"108.001\",\n        \"exchangerateacc\": \"101.002\",\n        \"id\": \"D-00000000004\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Division",
+			"id": "fc801512-dd34-4df3-8f98-8d0f2c51e2ae",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/division/D-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"division",
+						"D-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "9bcc1d26-deee-4283-8eb0-3c38a2fd5d86",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/division/D-00000000003",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"division",
+								"D-00000000003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 07:07:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663225675.991586"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663225675.991586"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 404,\n    \"message\": \"Data tidak ditemukan\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Division",
+			"id": "3a772439-78c6-487a-8d67-cd2ba196cbb7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"Division dua\",\r\n    \"retainedearningacc\":\"108.001\",\r\n    \"exchangerateacc\":\"101.002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/division/D-00000000003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"division",
+						"D-00000000003"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "2b8ef9a5-53d1-4b24-823d-206b4f105091",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"Division dua\",\r\n    \"retainedearningacc\":\"108.001\",\r\n    \"exchangerateacc\":\"101.002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/division/D-00000000003",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"division",
+								"D-00000000003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 07:08:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663225723.126542"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663225723.126542"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Division berhasil diubah\",\n    \"data\": {\n        \"description\": \"Division dua\",\n        \"retainedearningacc\": \"108.001\",\n        \"exchangerateacc\": \"101.002\",\n        \"id\": \"D-00000000003\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Division",
+			"id": "4cb47812-6224-44bb-b9bb-dcd91953c562",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/division/D-00000000004",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"division",
+						"D-00000000004"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "90b98f0c-7a41-460e-ac3d-6c03ee1ce91b",
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/division/D-00000000004",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"division",
+								"D-00000000004"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 07:09:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663225791.291370"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663225791.291370"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Division berhasil dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		}
+	]
+}

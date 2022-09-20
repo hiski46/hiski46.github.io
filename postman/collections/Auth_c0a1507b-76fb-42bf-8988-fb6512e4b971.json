@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "fbc196c2-0e0a-47da-8980-a051c1ce214f",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"id": "7d264815-96a1-4772-9952-93885fb17026",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email_username\": \"superadmin@gmail.com\",\r\n    \"password\": \"cinda@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"id": "a430da06-ffce-4679-821f-c910c708410d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "b233a8788404354efcfcc81244c27adfd4aa791e11aaec5c486483ee35868382",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/logout",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

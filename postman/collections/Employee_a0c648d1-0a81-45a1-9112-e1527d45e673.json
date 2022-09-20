@@ -1,0 +1,1732 @@
+{
+	"info": {
+		"_postman_id": "2ac407fc-2844-43f6-9a1a-094f0f1af13b",
+		"name": "Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Employee Group",
+			"id": "7f33ac0b-4589-4610-9066-5eaccc5f4dfc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0056a677037c5e343f26cc3d87871b2c7453607e2c1a04e25ba0d229dbf484dd",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/employeegroup/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employeegroup",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "a407dd38-c40d-4981-83cf-47f24897cd58",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employeegroup/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employeegroup",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 08:42:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663317772.201682"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663317772.201682"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"employeegroup\": [\n            {\n                \"id\": \"001\",\n                \"description\": \"ADMINISTRASI\",\n                \"parent\": \"\",\n                \"isgroup\": \"0\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"002\",\n                \"description\": \"TOKO\",\n                \"parent\": \"\",\n                \"isgroup\": \"0\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Employee Group",
+			"id": "f6940610-b119-4191-a4f1-eda9ce578519",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"Employee Group 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employeegroup/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employeegroup",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "27ff8112-4a06-4f25-80af-5c14385da505",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"Employee Group 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employeegroup/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employeegroup",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 08:45:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663317922.454845"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663317922.454845"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Employee Group berhasil ditambah\",\n    \"data\": {\n        \"description\": \"Employee Group 2\",\n        \"id\": \"EG-00000000004\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Employee Group",
+			"id": "074ca1a6-d813-464e-9e8f-f05a434b7bc3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employeegroup/EG-00000000004",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employeegroup",
+						"EG-00000000004"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "9f53f667-9b4c-44dd-ae90-90182723ba4c",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employeegroup/EG-00000000004",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employeegroup",
+								"EG-00000000004"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 08:46:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663317987.553362"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663317987.553362"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data Employee group by id\",\n    \"data\": {\n        \"employeegroup\": {\n            \"id\": \"EG-00000000004\",\n            \"description\": \"Employee Group 2\",\n            \"parent\": \"\",\n            \"isgroup\": \"0\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"updatetimestamp\": \"2022-09-16 15:45:22\",\n            \"created_at\": \"2022-09-16 15:45:22\",\n            \"updated_at\": \"2022-09-16 15:45:22\",\n            \"deleted_at\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Employee Group",
+			"id": "8481ddba-d087-4593-a50c-528f3a6503b4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"Group dua\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employeegroup/EG-00000000004",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employeegroup",
+						"EG-00000000004"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "8904460b-7092-4024-a000-dd226edb2294",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"Group dua\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employeegroup/EG-00000000004",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employeegroup",
+								"EG-00000000004"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 08:48:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663318118.779424"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663318118.779424"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Employee Group berhasil diubah\",\n    \"data\": {\n        \"description\": \"Group dua\",\n        \"id\": \"EG-00000000004\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Group",
+			"id": "0eebb907-7f6a-4835-9531-851925a1a6f9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employeegroup/EG-00000000004",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employeegroup",
+						"EG-00000000004"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "977673df-da2b-4300-bf4a-dde80bc831c7",
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employeegroup/EG-00000000004",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employeegroup",
+								"EG-00000000004"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 08:50:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663318202.200794"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663318202.200794"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Employee Group berhasil dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Employee Level",
+			"id": "96e466eb-defe-4b85-9dc4-51f45c391e8d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employeelevel/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employeelevel",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "7d49909c-0509-41bb-aeec-06d6cec74621",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employeelevel/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employeelevel",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 08:58:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663318739.113726"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663318739.113726"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"employeelevel\": [\n            {\n                \"id\": \"1\",\n                \"description\": \"MANAGEMENT LEVEL 1\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"created_at\": null,\n                \"uploaded_at\": null,\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"2\",\n                \"description\": \"MANAGEMENT LEVEL 2\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:46\",\n                \"created_at\": null,\n                \"uploaded_at\": null,\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Employee Level",
+			"id": "b104cade-085f-42ff-a260-196c4e7a6a04",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"Level 1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employeelevel/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employeelevel",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "def5ef72-e6ae-4cb7-abc0-7ef62b94fa48",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"Level 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employeelevel/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employeelevel",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 09:09:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663319378.547852"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663319378.547852"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Employee Level berhasil ditambah\",\n    \"data\": {\n        \"description\": \"Level 1\",\n        \"id\": \"EL-00000000003\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Updated Employee Level",
+			"id": "6ce9d658-b42d-4636-9fdd-e696d6d5be8e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"Lecel dua\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employeelevel/EL-00000000003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employeelevel",
+						"EL-00000000003"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "84ae687e-d54a-42cb-b8ef-5844f31339dd",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"Lecel dua\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employeelevel/EL-00000000003",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employeelevel",
+								"EL-00000000003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 09:12:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663319564.529209"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663319564.529209"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Employee Level berhasil diubah\",\n    \"data\": {\n        \"description\": \"Lecel dua\",\n        \"id\": \"EL-00000000003\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Employee Level",
+			"id": "9d3285a1-662b-4b8a-8ee8-5dd92964dd25",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employeelevel/EL-00000000003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employeelevel",
+						"EL-00000000003"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "6701054f-7dc3-4b21-b85f-e5e4629acb70",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employeelevel/EL-00000000003",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employeelevel",
+								"EL-00000000003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 09:13:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663319610.610438"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663319610.610438"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data Employee level by id\",\n    \"data\": {\n        \"employeelevel\": {\n            \"id\": \"0\",\n            \"description\": \"Lecel dua\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"updatetimestamp\": \"2022-09-16 16:12:44\",\n            \"created_at\": \"2022-09-16 16:09:38\",\n            \"updated_at\": \"2022-09-16 16:12:44\",\n            \"deleted_at\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Employee Level",
+			"id": "234bafda-9b97-4613-84ed-aa5977c916da",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employeelevel/EL-00000000003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employeelevel",
+						"EL-00000000003"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "a7746f36-a63d-4d87-96ac-105c59539cdd",
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employeelevel/EL-00000000003",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employeelevel",
+								"EL-00000000003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 09:14:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663319650.680503"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663319650.680503"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Employee Group berhasil dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Employee",
+			"id": "ec96c0cc-85ac-4524-9b32-cd8c825560ae",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employee/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3908cd71-71c9-4ec6-b22c-a95a63708243",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employee/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 09:38:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663321116.920679"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663321116.920679"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"employee\": [\n            {\n                \"id\": \"1\",\n                \"name\": \"Siapa aja\",\n                \"employeegroup\": \"\",\n                \"address\": \"\",\n                \"telephone\": \"\",\n                \"faximile\": \"\",\n                \"mobilephone\": \"\",\n                \"employeelevel\": \"0\",\n                \"website\": \"\",\n                \"religion\": \"0\",\n                \"birthdate\": null,\n                \"sex\": \"0\",\n                \"email\": \"\",\n                \"creditlimit\": \"0\",\n                \"registerdate\": null,\n                \"activeuntil\": \"2099-12-31 00:00:00\",\n                \"taxid\": \"\",\n                \"isactive\": \"1\",\n                \"country\": \"\",\n                \"taxtype\": \"0\",\n                \"occupation\": \"\",\n                \"bankaccount\": \"\",\n                \"bankname\": \"\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-13 16:09:31\",\n                \"image\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Employee",
+			"id": "07b1fc2e-1076-48c4-a943-7317ab31debe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Abin\",\r\n    \"employeegroup\":\"EG-00000000003\",\r\n    \"employeelevel\":\"1\",\r\n    \"taxtype\":\"0\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employee/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "9a8f0153-e35f-42cf-bca6-5c58c3beb41e",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Abin\",\r\n    \"employeegroup\":\"EG-00000000003\",\r\n    \"employeelevel\":\"1\",\r\n    \"taxtype\":\"0\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employee/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 09:43:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663321382.625938"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663321382.625938"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Employee berhasil ditambah\",\n    \"data\": {\n        \"name\": \"Abin\",\n        \"employeegroup\": \"EG-00000000003\",\n        \"employeelevel\": \"1\",\n        \"taxtype\": \"0\",\n        \"id\": \"E-00000000003\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Employee",
+			"id": "86187490-472b-47e1-9d65-be716ca6b695",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employee/E-00000000003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"E-00000000003"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "0fb2fe84-8a68-4beb-bfe1-202f93e3e72c",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employee/E-00000000003",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"E-00000000003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 09:45:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663321518.477837"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663321518.477837"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data Employee by id\",\n    \"data\": {\n        \"employee\": {\n            \"id\": \"E-00000000003\",\n            \"name\": \"Abin\",\n            \"employeegroup\": \"EG-00000000003\",\n            \"address\": \"\",\n            \"telephone\": \"\",\n            \"faximile\": \"\",\n            \"mobilephone\": \"\",\n            \"employeelevel\": \"1\",\n            \"website\": \"\",\n            \"religion\": \"0\",\n            \"birthdate\": null,\n            \"sex\": \"0\",\n            \"email\": \"\",\n            \"creditlimit\": \"0\",\n            \"registerdate\": null,\n            \"activeuntil\": \"2099-12-31 00:00:00\",\n            \"taxid\": \"\",\n            \"isactive\": \"1\",\n            \"country\": \"\",\n            \"taxtype\": \"0\",\n            \"occupation\": \"\",\n            \"bankaccount\": \"\",\n            \"bankname\": \"\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"updatetimestamp\": \"2022-09-16 16:43:02\",\n            \"image\": null,\n            \"created_at\": \"2022-09-16 16:43:02\",\n            \"updated_at\": \"2022-09-16 16:43:02\",\n            \"deleted_at\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Employee",
+			"id": "a0cf0224-a9b1-486f-b6e6-ecc855673d27",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Abon\",\r\n    \"employeegroup\":\"EG-00000000003\",\r\n    \"employeelevel\":\"1\",\r\n    \"taxtype\":\"0\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employee/E-00000000003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"E-00000000003"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "65ba57fa-a694-45fe-9613-c6286b5736b2",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Abon\",\r\n    \"employeegroup\":\"EG-00000000003\",\r\n    \"employeelevel\":\"1\",\r\n    \"taxtype\":\"0\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employee/E-00000000003",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"E-00000000003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 09:46:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663321617.962268"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663321617.962268"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Employee berhasil diubah\",\n    \"data\": {\n        \"name\": \"Abon\",\n        \"employeegroup\": \"EG-00000000003\",\n        \"employeelevel\": \"1\",\n        \"taxtype\": \"0\",\n        \"id\": \"E-00000000003\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Employee",
+			"id": "e2915f48-fab5-4f5e-b509-58c3f992bad6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/employee/E-00000000003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"E-00000000003"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "51e5b5f4-289e-447b-b5ba-5b2aad8308c4",
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/employee/E-00000000003",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"E-00000000003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 09:47:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663321652.475313"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663321652.475313"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Employee berhasil dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		}
+	]
+}

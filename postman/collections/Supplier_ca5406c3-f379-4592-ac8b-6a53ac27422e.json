@@ -1,0 +1,472 @@
+{
+	"info": {
+		"_postman_id": "622909a0-9458-414f-8ce0-8f52d0dbd22c",
+		"name": "Supplier",
+		"description": "Buy or rent spacecrafts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Supplier",
+			"id": "2c489b2e-3089-4d4e-9815-c856c41d4f11",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "cc1ea26ababb7e4c9e5f8c1b12fb28927b09c9da772e31181b8dd2f6f2ee9b99",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/supplier/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"supplier",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "30a2f397-15a3-4c11-a4f8-5bff1d713610",
+					"name": "401",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.238:8080/api/v1/supplier/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"238"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"supplier",
+								""
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.238:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 08:18:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663057101.089032"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.238:8080/?debugbar_time=1663057101.089032"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 401,\n    \"message\": \"Invalid Authentication, Please login!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Supplier",
+			"id": "f6a40c79-ed6f-4b3e-bc2f-b2420699e869",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ad672786ed2b8dec9b9341396616096c8df90a85f859dec072820a7df8f91cde",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/supplier/SP-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"supplier",
+						"SP-00000000001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Supplier",
+			"id": "410f97d5-f165-474f-817b-17587c7f3918",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sparta\",\r\n    \"suppliergroup\":\"PR-00000000001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/supplier/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"supplier",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Supplier",
+			"id": "f108d644-07c8-4e2c-8302-18ee5d9d7b9f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Spartakus\",\r\n    \"suppliergroup\":\"PR-00000000001\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/supplier/SP-00000000005",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"supplier",
+						"SP-00000000005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Supplier",
+			"id": "888419cc-1b1d-4d32-a57e-d2e3d1d54a7a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/supplier/SP-00000000005",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"supplier",
+						"SP-00000000005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Supplier Group",
+			"id": "50d246a2-02c3-4ff8-bfdc-94a5fe1e8051",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/suppliergroup",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"suppliergroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Supplier Group",
+			"id": "17215e1d-e200-4ba7-8ddf-1629b28bc226",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/suppliergroup/PR-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"suppliergroup",
+						"PR-00000000001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Supplier Group",
+			"id": "230e443d-6c34-496f-8a0a-07aadcbcbd04",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"Supplier 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/suppliergroup",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"suppliergroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Supplier Group",
+			"id": "3a60bbda-54a5-417f-9e72-3b168e5743d9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"Supplier 1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/suppliergroup/PR-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"suppliergroup",
+						"PR-00000000001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Supplier Group",
+			"id": "5816b8e0-4077-49c8-ac2b-bbd478eb85a8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/suppliergroup/PR-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"suppliergroup",
+						"PR-00000000001"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-Api-Key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "<API Key>",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "88165eb5-5538-4b89-9e55-e515ff500402",
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}

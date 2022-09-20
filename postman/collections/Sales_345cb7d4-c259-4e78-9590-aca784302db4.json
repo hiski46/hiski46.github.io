@@ -1,0 +1,1795 @@
+{
+	"info": {
+		"_postman_id": "c12388b9-43bf-442a-98ac-7d0fc06471a6",
+		"name": "Sales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Salesman Group",
+			"id": "1dc8c027-651d-44dd-aa99-3b95855bb1bf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/salesmangroup/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"salesmangroup",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "aec006ad-e1b1-4b2b-9f79-e5ecaccda2c8",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/salesmangroup/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salesmangroup",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 02:30:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663209054.221705"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663209054.221705"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"salesmangroup\": [\n            {\n                \"id\": \"S1\",\n                \"description\": \"SALESMAN I\",\n                \"parent\": \"\",\n                \"isgroup\": \"1\",\n                \"commisionrules\": \"\",\n                \"payablecommacc\": \"105.002\",\n                \"expensecommacc\": \"602.004\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:47\",\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"S11\",\n                \"description\": \"Internal Kantor\",\n                \"parent\": \"S1\",\n                \"isgroup\": \"0\",\n                \"commisionrules\": \"\",\n                \"payablecommacc\": \"105.002\",\n                \"expensecommacc\": \"602.004\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:47\",\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"S2\",\n                \"description\": \"SALESMAN II\",\n                \"parent\": \"\",\n                \"isgroup\": \"0\",\n                \"commisionrules\": \"\",\n                \"payablecommacc\": \"105.002\",\n                \"expensecommacc\": \"602.004\",\n                \"usercreate\": \"admin\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-07 09:48:47\",\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Salesman Group",
+			"id": "5f952963-24bf-4498-9ee0-c75e7f0bc8c2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\" : \"Group 1\",\r\n    \"payablecommacc\":\"105.002\",\r\n    \"expensecommacc\":\"602.004\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/salesmangroup/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"salesmangroup",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "e2f10a0e-f49a-4379-8ecb-2aa1798c0a74",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\" : \"Group 1\",\r\n    \"payablecommacc\":\"105.002\",\r\n    \"expensecommacc\":\"602.004\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/salesmangroup/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salesmangroup",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 02:36:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663209364.247856"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663209364.247856"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Salesman Group berhasil ditambah\",\n    \"data\": {\n        \"description\": \"Group 1\",\n        \"payablecommacc\": \"105.002\",\n        \"expensecommacc\": \"602.004\",\n        \"id\": \"SLSG-00000000001\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Salesman Group",
+			"id": "31741e7b-453e-4894-9a34-004487602d9e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/salesmangroup/SLSG-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"salesmangroup",
+						"SLSG-00000000001"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "76a3313d-4f7f-40f0-8bb2-74320fb5896a",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/salesmangroup/SLSG-00000000001",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salesmangroup",
+								"SLSG-00000000001"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 02:37:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663209429.894125"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663209429.894125"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data salesman group by id\",\n    \"data\": {\n        \"salesmangroup\": {\n            \"id\": \"SLSG-00000000001\",\n            \"description\": \"Group 1\",\n            \"parent\": \"\",\n            \"isgroup\": \"0\",\n            \"commisionrules\": \"\",\n            \"payablecommacc\": \"105.002\",\n            \"expensecommacc\": \"602.004\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"updatetimestamp\": \"2022-09-15 09:36:04\",\n            \"created_at\": \"2022-09-15 09:36:04\",\n            \"updated_at\": \"2022-09-15 09:36:04\",\n            \"deleted_at\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Salesman Group",
+			"id": "852c83f0-140a-4efa-a6d6-63fbce26f6b1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\" : \"Group I\",\r\n    \"payablecommacc\":\"105.002\",\r\n    \"expensecommacc\":\"602.004\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/salesmangroup/SLSG-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"salesmangroup",
+						"SLSG-00000000001"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3ee93008-37e4-44da-a09f-7370bca3a957",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\" : \"Group I\",\r\n    \"payablecommacc\":\"105.002\",\r\n    \"expensecommacc\":\"602.004\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/salesmangroup/SLSG-00000000001",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salesmangroup",
+								"SLSG-00000000001"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 02:39:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663209556.295204"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663209556.295204"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Salesman Group berhasil diubah\",\n    \"data\": {\n        \"description\": \"Group I\",\n        \"payablecommacc\": \"105.002\",\n        \"expensecommacc\": \"602.004\",\n        \"id\": \"SLSG-00000000001\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Salesman Group",
+			"id": "ae89722c-e786-4664-bfa4-b56ab42e4b98",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/salesmangroup/SLSG-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"salesmangroup",
+						"SLSG-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "6e4fc6d2-bbc3-4022-bb11-ee781306141c",
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/salesmangroup/SLSG-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salesmangroup",
+								"SLSG-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 02:40:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663209646.559803"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663209646.559803"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Salesman Group berhasil dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Salesman",
+			"id": "eb0d74b8-b1f6-4ed7-80b1-31bda6cfdb5a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/salesman",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"salesman"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "2d2fcf81-ab35-4200-a036-93a35f4811e0",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/salesman",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salesman"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 02:51:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663210314.278298"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663210314.278298"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"salesman\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Salesman",
+			"id": "93a9ae88-6f41-4110-abec-8db8b4814afc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/salesman/SLM-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"salesman",
+						"SLM-00000000001"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "e4c4bbbf-3549-4cf5-854d-632956397024",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/salesman/SLM-00000000001",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salesman",
+								"SLM-00000000001"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 03:03:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663210994.902307"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663210994.902307"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data salesman group by id\",\n    \"data\": {\n        \"salesman\": {\n            \"id\": \"SLM-00000000001\",\n            \"name\": \"Salesman 1\",\n            \"salesmangroup\": \"SLSG-00000000001\",\n            \"address\": \"\",\n            \"telephone\": \"\",\n            \"faximile\": \"\",\n            \"mobilephone\": \"\",\n            \"category\": \"0\",\n            \"contactperson\": \"\",\n            \"religion\": \"0\",\n            \"birthdate\": null,\n            \"sex\": \"0\",\n            \"email\": \"\",\n            \"website\": \"\",\n            \"creditlimit\": \"0\",\n            \"registerdate\": null,\n            \"activeuntil\": \"2099-12-31 00:00:00\",\n            \"country\": \"\",\n            \"isactive\": \"1\",\n            \"commisionrules\": \"\",\n            \"payablecommacc\": \"105.002\",\n            \"expensecommacc\": \"602.004\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"updatetimestamp\": \"2022-09-15 09:59:48\",\n            \"image\": null,\n            \"created_at\": \"2022-09-15 09:59:48\",\n            \"updated_at\": \"2022-09-15 09:59:48\",\n            \"deleted_at\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Salesman",
+			"id": "d4996240-b21c-47c0-8f53-aff201483f0c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Salesman 2\",\r\n    \"salesmangroup\":\"SLSG-00000000001\",\r\n    \"payablecommacc\":\"105.002\",\r\n    \"expensecommacc\":\"602.004\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/salesman",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"salesman"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "898173ec-fb93-4abe-a657-fd4e8a36f042",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Salesman 1\",\r\n    \"salesmangroup\":\"SLSG-00000000001\",\r\n    \"payablecommacc\":\"105.002\",\r\n    \"expensecommacc\":\"602.004\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/salesman",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salesman"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 02:54:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663210458.011269"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663210458.011269"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Salesman berhasil ditambah\",\n    \"data\": {\n        \"name\": \"Salesman 1\",\n        \"salesmangroup\": \"SLSG-00000000001\",\n        \"payablecommacc\": \"105.002\",\n        \"expensecommacc\": \"602.004\",\n        \"id\": \"SLM-00000000004\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Salesman",
+			"id": "2eefb020-a6bd-449f-bf45-54d77fd96a6b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/salesman/SLM-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"salesman",
+						"SLM-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "e2c14ce8-3f8a-4c82-8c50-4e73b7301613",
+					"name": "404",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/salesman/SLSG-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salesman",
+								"SLSG-00000000002"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 03:00:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663210845.795744"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663210845.795744"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 404,\n    \"message\": \"Salesman dengan id SLSG-00000000002 tidak ditemukan atau sudah dihapus\",\n    \"data\": []\n}"
+				},
+				{
+					"id": "c5b73005-61ae-4a02-bed2-7d7b665ce8fe",
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/salesman/SLM-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salesman",
+								"SLM-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 03:02:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663210949.779434"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663210949.779434"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Salesman berhasil dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Salesman",
+			"id": "5d553970-02d4-436e-8c2d-bd9163586898",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Salesman I\",\r\n    \"salesmangroup\":\"SLSG-00000000001\",\r\n    \"payablecommacc\":\"105.002\",\r\n    \"expensecommacc\":\"602.004\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/salesman/SLM-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"salesman",
+						"SLM-00000000001"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "24ff79f3-d6a9-44f6-aeac-06d8fbd0c0bb",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Salesman I\",\r\n    \"salesmangroup\":\"SLSG-00000000001\",\r\n    \"payablecommacc\":\"105.002\",\r\n    \"expensecommacc\":\"602.004\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/salesman/SLM-00000000001",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"salesman",
+								"SLM-00000000001"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Sep 2022 03:04:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663211069.311765"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663211069.311765"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Salesman berhasil diubah\",\n    \"data\": {\n        \"name\": \"Salesman I\",\n        \"salesmangroup\": \"SLSG-00000000001\",\n        \"payablecommacc\": \"105.002\",\n        \"expensecommacc\": \"602.004\",\n        \"id\": \"SLM-00000000001\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Sales",
+			"id": "30b6163d-7d43-4f08-b543-cc2b1fd4c760",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/sales/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sales",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "185ab477-117f-4b83-921c-2897d260f0b7",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/sales/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sales",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 03:58:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663300717.932140"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663300717.932140"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"sales\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Sales",
+			"id": "d49eea8b-a518-47a8-8388-0e3dd7b17672",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"salesmanid\":\"SLM-00000000001\",\r\n    \"division\":\"D-00000000002\",\r\n    \"customerid\":\"CST-00000000001\",\r\n    \"billto\":\"CST-00000000001\",\r\n    \"shipment\":\"SHP-00000000001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/sales/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sales",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "e040c554-69a5-4b83-9360-70e200ae99a2",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"salesmanid\":\"SLM-00000000001\",\r\n    \"division\":\"D-00000000002\",\r\n    \"customerid\":\"CST-00000000001\",\r\n    \"billto\":\"CST-00000000001\",\r\n    \"shipment\":\"SHP-00000000001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/sales/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sales",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 04:39:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663303191.230622"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663303191.230622"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Sales berhasil ditambah\",\n    \"data\": {\n        \"salesmanid\": \"SLM-00000000001\",\n        \"division\": \"D-00000000002\",\n        \"customerid\": \"CST-00000000001\",\n        \"billto\": \"CST-00000000001\",\n        \"shipment\": \"SHP-00000000001\",\n        \"id\": \"S-00000000002\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Sales",
+			"id": "6de185ec-0c62-45be-95a1-9aa4ac32c47e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/sales/S-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sales",
+						"S-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "59e72a8f-0bcd-4b9a-b609-3b9c61f37038",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/sales/S-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sales",
+								"S-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 04:40:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663303259.246602"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663303259.246602"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data salesman group by id\",\n    \"data\": {\n        \"sales\": {\n            \"id\": \"S-00000000002\",\n            \"salesidref\": \"\",\n            \"orderid\": null,\n            \"deliveryorderid\": null,\n            \"salesdate\": null,\n            \"salestime\": null,\n            \"kind\": \"1\",\n            \"salestype\": \"0\",\n            \"earlydiscdays\": \"0\",\n            \"earlydiscvalue\": \"0\",\n            \"duedays\": \"0\",\n            \"customerid\": \"CST-00000000001\",\n            \"currtrans\": \"\",\n            \"ratedefault\": \"0\",\n            \"rateused\": \"0\",\n            \"salesmanid\": \"SLM-00000000001\",\n            \"billto\": \"CST-00000000001\",\n            \"shipto\": null,\n            \"salespercentdisc\": \"0\",\n            \"returnpercentdisc\": \"0\",\n            \"salesvaluedisc\": \"0\",\n            \"returnvaluedisc\": \"0\",\n            \"memo\": null,\n            \"memoedit\": null,\n            \"division\": \"D-00000000002\",\n            \"printed\": \"0\",\n            \"taxprinted\": \"0\",\n            \"shipment\": \"SHP-00000000001\",\n            \"dateaccepted\": null,\n            \"accepted\": \"1\",\n            \"paidinfull\": \"0\",\n            \"paidinfulldate\": null,\n            \"paidinfullref\": \"\",\n            \"taxprint\": \"0\",\n            \"taxprintid\": \"\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"posted\": \"1\",\n            \"updatetimestamp\": \"2022-09-16 11:39:51\",\n            \"created_at\": \"2022-09-16 11:39:51\",\n            \"updated_at\": \"2022-09-16 11:39:51\",\n            \"deleted_at\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Sales",
+			"id": "4ab98e5e-69be-4bcc-8d8e-646c51b9f0c6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"salesmanid\":\"SLM-00000000001\",\r\n    \"division\":\"D-00000000002\",\r\n    \"customerid\":\"CST-00000000001\",\r\n    \"billto\":\"CST-00000000001\",\r\n    \"shipment\":\"SHP-00000000001\",\r\n    \"salestype\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/sales/S-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sales",
+						"S-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "ffbc9285-a34f-4b14-8dfe-902df54fbd0b",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"salesmanid\":\"SLM-00000000001\",\r\n    \"division\":\"D-00000000002\",\r\n    \"customerid\":\"CST-00000000001\",\r\n    \"billto\":\"CST-00000000001\",\r\n    \"shipment\":\"SHP-00000000001\",\r\n    \"salestype\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/sales/S-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sales",
+								"S-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 04:44:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663303450.059530"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663303450.059530"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Sales berhasil diubah\",\n    \"data\": {\n        \"salesmanid\": \"SLM-00000000001\",\n        \"division\": \"D-00000000002\",\n        \"customerid\": \"CST-00000000001\",\n        \"billto\": \"CST-00000000001\",\n        \"shipment\": \"SHP-00000000001\",\n        \"salestype\": \"1\",\n        \"id\": \"S-00000000002\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Sales",
+			"id": "d0b783f9-b67f-41b6-96fd-5e8471e771c7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/sales/S-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sales",
+						"S-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "d5c36c55-f360-4db1-894b-dbe5272a347b",
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/sales/S-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sales",
+								"S-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Sep 2022 04:44:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663303481.493227"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663303481.493227"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Sales berhasil dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		}
+	]
+}

@@ -682,7 +682,7 @@
 			]
 		},
 		{
-			"name": "Get One Purchase Detail",
+			"name": "Get Purchase Detail by Purchase Id",
 			"id": "ddd7d99e-b286-450f-a798-31a8098f1ca5",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -691,7 +691,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/purchasedetail/PD-00000000001",
+					"raw": "http://192.168.0.57:8080/api/v1/purchasedetail/PCH-00000000003",
 					"protocol": "http",
 					"host": [
 						"192",
@@ -704,19 +704,19 @@
 						"api",
 						"v1",
 						"purchasedetail",
-						"PD-00000000001"
+						"PCH-00000000003"
 					]
 				}
 			},
 			"response": [
 				{
-					"id": "2668c408-4b22-42a0-89f8-d08872521322",
+					"id": "dcb6ca66-cd2a-461d-b0b3-2fec111a91da",
 					"name": "200",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://192.168.0.57:8080/api/v1/purchasedetail/PD-00000000001",
+							"raw": "http://192.168.0.57:8080/api/v1/purchasedetail/PCH-00000000003",
 							"protocol": "http",
 							"host": [
 								"192",
@@ -729,7 +729,7 @@
 								"api",
 								"v1",
 								"purchasedetail",
-								"PD-00000000001"
+								"PCH-00000000003"
 							]
 						}
 					},
@@ -743,7 +743,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 14 Sep 2022 04:35:03 GMT"
+							"value": "Thu, 15 Sep 2022 01:41:45 GMT"
 						},
 						{
 							"key": "Connection",
@@ -775,125 +775,16 @@
 						},
 						{
 							"key": "Debugbar-Time",
-							"value": "1663130103.894102"
+							"value": "1663206105.448104"
 						},
 						{
 							"key": "Debugbar-Link",
-							"value": "http://192.168.0.57:8080/?debugbar_time=1663130103.894102"
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663206105.448104"
 						}
 					],
 					"cookie": [],
 					"responseTime": null,
-					"body": "{\n    \"status\": 200,\n    \"message\": \"Data purchase sdetail by id\",\n    \"data\": {\n        \"purchasedetail\": {\n            \"id\": \"PD-00000000001\",\n            \"transdate\": null,\n            \"purchaseid\": \"PCH-00000000001\",\n            \"purchaseidref\": \"PCH-00000000001\",\n            \"productid\": \"PR-00000000001\",\n            \"snproduct\": \"\",\n            \"expireddate\": null,\n            \"purchaseqty\": \"0\",\n            \"returnqty\": \"0\",\n            \"unit\": \"UN-00000000001\",\n            \"price\": \"5000\",\n            \"grossamount\": \"0\",\n            \"taxid\": \"0\",\n            \"purchasetax\": \"0\",\n            \"returntax\": \"0\",\n            \"percentdisc\": \"\",\n            \"valuedisc\": \"0\",\n            \"netamount\": \"0\",\n            \"memo\": null,\n            \"departement\": \"1\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"updatetimestamp\": \"2022-09-14 10:44:49\",\n            \"created_at\": \"2022-09-14 10:44:49\",\n            \"updated_at\": \"2022-09-14 10:44:49\",\n            \"deleted_at\": null\n        }\n    }\n}"
-				}
-			]
-		},
-		{
-			"name": "Get Purchase Detail by Purchase id",
-			"id": "ef13fa87-f295-4c01-994e-42f4d46e67cb",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/purchasedetail/showpurchasedetail/PCH-00000000001",
-					"protocol": "http",
-					"host": [
-						"192",
-						"168",
-						"0",
-						"57"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"purchasedetail",
-						"showpurchasedetail",
-						"PCH-00000000001"
-					]
-				}
-			},
-			"response": [
-				{
-					"id": "c81a9e64-68a9-45ad-a8aa-dff37ea99581",
-					"name": "200",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://192.168.0.57:8080/api/v1/purchasedetail/showpurchasedetail/PCH-00000000001",
-							"protocol": "http",
-							"host": [
-								"192",
-								"168",
-								"0",
-								"57"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"v1",
-								"purchasedetail",
-								"showpurchasedetail",
-								"PCH-00000000001"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "192.168.0.57:8080"
-						},
-						{
-							"key": "Date",
-							"value": "Wed, 14 Sep 2022 04:31:15 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/7.4.19"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						},
-						{
-							"key": "Access-Control-Allow-Headers",
-							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
-						},
-						{
-							"key": "Access-Control-Allow-Methods",
-							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
-						},
-						{
-							"key": "Cache-control",
-							"value": "no-store, max-age=0, no-cache"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=UTF-8"
-						},
-						{
-							"key": "Debugbar-Time",
-							"value": "1663129875.295138"
-						},
-						{
-							"key": "Debugbar-Link",
-							"value": "http://192.168.0.57:8080/?debugbar_time=1663129875.295138"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"purchasedetail\": [\n            {\n                \"id\": \"PD-00000000001\",\n                \"transdate\": null,\n                \"purchaseid\": \"PCH-00000000001\",\n                \"purchaseidref\": \"PCH-00000000001\",\n                \"productid\": \"PR-00000000001\",\n                \"snproduct\": \"\",\n                \"expireddate\": null,\n                \"purchaseqty\": \"0\",\n                \"returnqty\": \"0\",\n                \"unit\": \"UN-00000000001\",\n                \"price\": \"5000\",\n                \"grossamount\": \"0\",\n                \"taxid\": \"0\",\n                \"purchasetax\": \"0\",\n                \"returntax\": \"0\",\n                \"percentdisc\": \"\",\n                \"valuedisc\": \"0\",\n                \"netamount\": \"0\",\n                \"memo\": null,\n                \"departement\": \"1\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-14 10:44:49\",\n                \"created_at\": \"2022-09-14 10:44:49\",\n                \"updated_at\": \"2022-09-14 10:44:49\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"PD-00000000003\",\n                \"transdate\": null,\n                \"purchaseid\": \"PCH-00000000001\",\n                \"purchaseidref\": \"PCH-00000000001\",\n                \"productid\": \"PR-00000000003\",\n                \"snproduct\": \"\",\n                \"expireddate\": null,\n                \"purchaseqty\": \"0\",\n                \"returnqty\": \"0\",\n                \"unit\": \"UN-00000000001\",\n                \"price\": \"5000\",\n                \"grossamount\": \"0\",\n                \"taxid\": \"0\",\n                \"purchasetax\": \"0\",\n                \"returntax\": \"0\",\n                \"percentdisc\": \"\",\n                \"valuedisc\": \"0\",\n                \"netamount\": \"0\",\n                \"memo\": null,\n                \"departement\": \"1\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-14 10:48:29\",\n                \"created_at\": \"2022-09-14 10:48:29\",\n                \"updated_at\": \"2022-09-14 10:48:29\",\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data purchase sdetail by id\",\n    \"data\": {\n        \"purchasedetail\": [\n            {\n                \"id\": \"PD-00000000002\",\n                \"transdate\": null,\n                \"purchaseid\": \"PCH-00000000003\",\n                \"purchaseidref\": \"PCH-00000000001\",\n                \"productid\": \"PR-00000000001\",\n                \"snproduct\": \"\",\n                \"expireddate\": null,\n                \"purchaseqty\": \"0\",\n                \"returnqty\": \"0\",\n                \"unit\": \"UN-00000000001\",\n                \"price\": \"5000\",\n                \"grossamount\": \"0\",\n                \"taxid\": \"0\",\n                \"purchasetax\": \"0\",\n                \"returntax\": \"0\",\n                \"percentdisc\": \"\",\n                \"valuedisc\": \"0\",\n                \"netamount\": \"0\",\n                \"memo\": null,\n                \"departement\": \"1\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-14 10:45:30\",\n                \"created_at\": \"2022-09-14 10:45:30\",\n                \"updated_at\": \"2022-09-14 10:45:30\",\n                \"deleted_at\": null\n            }\n        ],\n        \"purchase\": {\n            \"id\": \"PCH-00000000003\",\n            \"purchaseidref\": \"\",\n            \"orderid\": null,\n            \"goodreceiptid\": null,\n            \"purchasedate\": null,\n            \"purchasetime\": null,\n            \"kind\": \"1\",\n            \"purchasetype\": \"0\",\n            \"earlydiscdays\": \"0\",\n            \"earlydiscvalue\": \"0\",\n            \"duedays\": \"0\",\n            \"supplierid\": \"SP-00000000003\",\n            \"currtrans\": \"\",\n            \"ratedefault\": \"0\",\n            \"rateused\": \"0\",\n            \"purchaser\": \"1\",\n            \"purchasepercentdisc\": \"0\",\n            \"returnpercentdisc\": \"0\",\n            \"purchasevaluedisc\": \"0\",\n            \"returnvaluedisc\": \"0\",\n            \"memo\": null,\n            \"memoedit\": null,\n            \"division\": \"1\",\n            \"printed\": \"0\",\n            \"shipment\": \"1\",\n            \"dateaccepted\": null,\n            \"accepted\": \"1\",\n            \"paidinfull\": \"0\",\n            \"paidinfulldate\": null,\n            \"paidinfullref\": \"\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"updatetimestamp\": \"2022-09-14 10:30:48\",\n            \"created_at\": \"2022-09-14 10:30:48\",\n            \"updated_at\": \"2022-09-14 10:30:48\",\n            \"deleted_at\": null\n        }\n    }\n}"
 				}
 			]
 		},
@@ -908,7 +799,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"purchaseid\":\"PCH-00000000001\",\r\n    \"productid\":\"PR-00000000003\",\r\n    \"departement\":\"1\",\r\n    \"unit\":\"UN-00000000001\",\r\n    \"taxid\":\"0\",\r\n    \"purchaseidref\":\"PCH-00000000001\",\r\n    \"price\":\"5000\"\r\n}",
+					"raw": "{\r\n    \"purchaseid\":\"PCH-00000000003\",\r\n    \"productid\":\"PR-00000000003\",\r\n    \"departement\":\"1\",\r\n    \"unit\":\"UN-00000000001\",\r\n    \"taxid\":\"0\",\r\n    \"purchaseidref\":\"PCH-00000000001\",\r\n    \"price\":\"6000\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1251,6 +1142,1316 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "{\n    \"status\": 200,\n    \"message\": \"Purchase detail berhasil dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Purchase Expense",
+			"id": "590154cf-5897-4c47-afbb-9b8cbbd96dd3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/purchaseexpense",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseexpense"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "c53e6b03-c3b2-48f8-b1cf-05e3476ed021",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/purchaseexpense",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"purchaseexpense"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Sep 2022 03:42:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663558936.538281"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663558936.538281"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"purchaseexpense\": [\n            {\n                \"id\": \"PEXP-00000000001\",\n                \"name\": \"Uang Parkir\",\n                \"description\": \"\",\n                \"purchaseexpacc\": \"112.002\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-19 10:40:32\",\n                \"created_at\": \"2022-09-19 10:40:32\",\n                \"updated_at\": \"2022-09-19 10:40:32\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"PEXP-00000000002\",\n                \"name\": \"PPN\",\n                \"description\": \"\",\n                \"purchaseexpacc\": \"112.002\",\n                \"usercreate\": \"\",\n                \"useredit\": \"\",\n                \"updatetimestamp\": \"2022-09-19 10:42:10\",\n                \"created_at\": \"2022-09-19 10:42:10\",\n                \"updated_at\": \"2022-09-19 10:42:10\",\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Purchase Expense",
+			"id": "7e8f5f03-cc3c-48bc-ae44-7a1c6b5af780",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Uang Parkir\",\r\n    \"purchaseexpacc\":\"112.002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/purchaseexpense",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseexpense"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "b27d7975-0695-4412-b5f6-7a5d60107318",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"PPN\",\r\n    \"purchaseexpacc\":\"112.002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/purchaseexpense",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"purchaseexpense"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Sep 2022 03:42:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663558931.022200"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663558931.022200"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Purchase expense berhasil ditambah\",\n    \"data\": {\n        \"name\": \"PPN\",\n        \"purchaseexpacc\": \"112.002\",\n        \"id\": \"PEXP-00000000002\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Purchase Expense",
+			"id": "618bb754-2fa5-48d3-8192-3442279c6011",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/purchaseexpense/PEXP-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseexpense",
+						"PEXP-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "301b3cc2-3e99-4922-8e5c-4d5e07d44a8f",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/purchaseexpense/PEXP-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"purchaseexpense",
+								"PEXP-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Sep 2022 03:42:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663558955.593614"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663558955.593614"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data purchase expense by id\",\n    \"data\": {\n        \"purchaseexpense\": {\n            \"id\": \"PEXP-00000000002\",\n            \"name\": \"PPN\",\n            \"description\": \"\",\n            \"purchaseexpacc\": \"112.002\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"updatetimestamp\": \"2022-09-19 10:42:10\",\n            \"created_at\": \"2022-09-19 10:42:10\",\n            \"updated_at\": \"2022-09-19 10:42:10\",\n            \"deleted_at\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Purchase Expense",
+			"id": "32eab6e2-7031-4d9e-afb7-3904ca90d7b3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"PPNsadsasadadad\",\r\n    \"purchaseexpacc\":\"101.001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/purchaseexpense/0",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseexpense",
+						"0"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "e35045c9-fcbc-40bc-ad13-efe9a07095b6",
+					"name": "500",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"PPNsadsasadadad\",\r\n    \"purchaseexpacc\":\"101.001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/purchaseexpense/0",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"purchaseexpense",
+								"0"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Sep 2022 03:46:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663559187.124862"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663559187.124862"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 500,\n    \"message\": \"Purchasw Expense gagal diubah\",\n    \"data\": []\n}"
+				},
+				{
+					"id": "c7901e11-e370-4bef-8c23-38aaf31aafb1",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"PPNsadsasadadad\",\r\n    \"purchaseexpacc\":\"101.001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/purchaseexpense/PEXP-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"purchaseexpense",
+								"PEXP-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Sep 2022 03:54:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663559676.411829"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663559676.411829"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Purchasw Expense berhasil diubah\",\n    \"data\": {\n        \"name\": \"PPNsadsasadadad\",\n        \"purchaseexpacc\": \"101.001\",\n        \"id\": \"PEXP-00000000002\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Purchase Expense",
+			"id": "2b70f619-4f6f-4966-81b4-f88c4f198864",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/purchaseexpense/PEXP-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseexpense",
+						"PEXP-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "2fed67e5-88b9-47ff-baa5-b0849bc9c4ee",
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/purchaseexpense/PEXP-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"purchaseexpense",
+								"PEXP-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Sep 2022 03:55:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663559712.184847"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663559712.184847"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Purchase Expense berhasil dihapus\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Purchase Expense Detail",
+			"id": "994f053e-5487-455f-bc81-371c4d2ecbac",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/purchaseexpensedetail/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseexpensedetail",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "462146e1-c8b1-48d2-a713-5b4f474ebea3",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/purchaseexpensedetail/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"purchaseexpensedetail",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Sep 2022 04:08:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663560497.383865"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663560497.383865"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Semua Purchase expense detail\",\n    \"data\": {\n        \"purchaseexpensedetail\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Purchase Expense Detail",
+			"id": "4c614c20-0707-4e1b-87c2-f9f6bc9f67d2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"purchaseidref\":\"\",\r\n    \"purchaseexpid\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/purchaseexpensedetail/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseexpensedetail",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "a2003270-85fc-4056-9231-7e058e057eeb",
+					"name": "500",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"purchaseidref\":\"\",\r\n    \"purchaseexpid\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/purchaseexpensedetail/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"purchaseexpensedetail",
+								""
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Sep 2022 04:10:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663560612.619092"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663560612.619092"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 500,\n    \"message\": \"Validasi error\",\n    \"data\": {\n        \"purchaseidref\": \"Purchase Harus di isi\",\n        \"purchaseexpid\": \"Purchase expense Harus di isi\"\n    }\n}"
+				},
+				{
+					"id": "f091767c-c36a-4ddc-84b0-b1dfa2fea14f",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"purchaseidref\":\"PCH-00000000001\",\r\n    \"purchaseexpid\":\"PEXP-00000000001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/purchaseexpensedetail/",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"purchaseexpensedetail",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Sep 2022 04:11:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663560687.158241"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663560687.158241"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Purchase expense berhasil ditambah\",\n    \"data\": {\n        \"purchaseidref\": \"PCH-00000000001\",\n        \"purchaseexpid\": \"PEXP-00000000001\",\n        \"id\": \"PEXPD-00000000001\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get One Purchase Expense Detail",
+			"id": "ab534dc9-9232-4529-8e5c-a23b626115f2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/purchaseexpensedetail/PEXPD-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseexpensedetail",
+						"PEXPD-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "99a769fe-8aee-4d76-9048-1bbd986d051a",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/purchaseexpensedetail/PEXPD-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"purchaseexpensedetail",
+								"PEXPD-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Sep 2022 04:12:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663560744.970664"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663560744.970664"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Data purchase expense detail by id\",\n    \"data\": {\n        \"purchaseexpensedetail\": {\n            \"id\": \"PEXPD-00000000002\",\n            \"purchaseid\": \"\",\n            \"purchaseidref\": \"PCH-00000000001\",\n            \"transdate\": null,\n            \"kind\": \"0\",\n            \"purchaseexpid\": \"PEXP-00000000001\",\n            \"debit\": \"0\",\n            \"credit\": \"0\",\n            \"memo\": null,\n            \"currtrans\": \"\",\n            \"ratedefault\": \"0\",\n            \"rateused\": \"0\",\n            \"usercreate\": \"\",\n            \"useredit\": \"\",\n            \"updatetimestamp\": \"2022-09-19 11:12:02\",\n            \"created_at\": \"2022-09-19 11:12:02\",\n            \"updated_at\": \"2022-09-19 11:12:02\",\n            \"deleted_at\": null\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Purchase Expense Detail",
+			"id": "fad90b49-7669-446e-a000-c41f7f8318fb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"purchaseidref\":\"PCH-00000000001\",\r\n    \"purchaseexpid\":\"PEXP-00000000002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/purchaseexpensedetail/PEXPD-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseexpensedetail",
+						"PEXPD-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "bae34d5e-4004-4bee-ac7d-1f315c22300b",
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"purchaseidref\":\"PCH-00000000001\",\r\n    \"purchaseexpid\":\"PEXP-00000000002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/purchaseexpensedetail/PEXPD-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"purchaseexpensedetail",
+								"PEXPD-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Sep 2022 04:15:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663560905.182726"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663560905.182726"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Purchase Expense Detail berhasil diubah\",\n    \"data\": {\n        \"purchaseidref\": \"PCH-00000000001\",\n        \"purchaseexpid\": \"PEXP-00000000002\",\n        \"id\": \"PEXPD-00000000002\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Purchase Expense Detail",
+			"id": "68463f88-99d9-4a03-8c25-491a2657f8b0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.57:8080/api/v1/purchaseexpensedetail/PEXPD-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"57"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseexpensedetail",
+						"PEXPD-00000000002"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "74f06305-6ca2-4c92-9ef3-a6ff6f458391",
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.0.57:8080/api/v1/purchaseexpensedetail/PEXPD-00000000002",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"57"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"purchaseexpensedetail",
+								"PEXPD-00000000002"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "192.168.0.57:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Sep 2022 04:17:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663561055.392755"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "http://192.168.0.57:8080/?debugbar_time=1663561055.392755"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Purchase Expense Detail berhasil dihapus\",\n    \"data\": []\n}"
 				}
 			]
 		}
