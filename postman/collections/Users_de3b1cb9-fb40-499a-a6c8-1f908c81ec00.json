@@ -263,8 +263,35 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7d67ac89e7c59a546734f838f78c301e1cd9e02747e062d8aba0eabd7ceaac11",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/getuserspermission/8",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"getuserspermission",
+						"8"
+					]
+				}
 			},
 			"response": []
 		},
@@ -275,8 +302,35 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7d67ac89e7c59a546734f838f78c301e1cd9e02747e062d8aba0eabd7ceaac11",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/getusersgroup/8",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"getusersgroup",
+						"8"
+					]
+				}
 			},
 			"response": []
 		},
@@ -287,8 +341,43 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7d67ac89e7c59a546734f838f78c301e1cd9e02747e062d8aba0eabd7ceaac11",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"group\": [\"admin\", \"users\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/addgroup",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"addgroup"
+					]
+				}
 			},
 			"response": []
 		},
@@ -299,8 +388,43 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7d67ac89e7c59a546734f838f78c301e1cd9e02747e062d8aba0eabd7ceaac11",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"group\": [\"admin\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/removegroup",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"removegroup"
+					]
+				}
 			},
 			"response": []
 		},
@@ -311,8 +435,43 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7d67ac89e7c59a546734f838f78c301e1cd9e02747e062d8aba0eabd7ceaac11",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"permission\": [\"supplier.access\", \"supplier.edit\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/addpermission",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"addpermission"
+					]
+				}
 			},
 			"response": []
 		},
@@ -323,8 +482,43 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7d67ac89e7c59a546734f838f78c301e1cd9e02747e062d8aba0eabd7ceaac11",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"permission\": [\"supplier.access\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.238:8080/api/v1/removepermission",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"removepermission"
+					]
+				}
 			},
 			"response": []
 		}

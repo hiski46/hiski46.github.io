@@ -24,15 +24,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://192.168.0.54:8080/api/v1/login",
-					"protocol": "http",
+					"raw": "https://api-erp-clg.ga/api/v1/login",
+					"protocol": "https",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"54"
+						"api-erp-clg",
+						"ga"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -40,7 +37,220 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "15ac709c-eb85-4369-b257-9864c842bb50",
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email_username\": \"superadmin@gmail.com\",\r\n    \"password\": \"cinda@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api-erp-clg.ga/api/v1/login",
+							"protocol": "https",
+							"host": [
+								"api-erp-clg",
+								"ga"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 21 Sep 2022 02:53:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Ubuntu)"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "ci_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "ci_session=k2685ecn7jo679hlf3mhgr0br31uh7qh; expires=Wed, 21-Sep-2022 04:53:57 GMT; Max-Age=7200; path=/; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663728837.296197"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "https://api-erp-clg.ga/?debugbar_time=1663728837.296197"
+						},
+						{
+							"key": "Content-Length",
+							"value": "161"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Credensial valid\",\n    \"data\": {\n        \"token\": \"876928403b457137683699fc1b3b0d77916ae7e6959b5633adc0e095fd2980b6\"\n    }\n}"
+				},
+				{
+					"id": "dc699cc1-2fbf-4402-9f91-bd9599232e1a",
+					"name": "401",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email_username\": \"superadmin@gmail.com\",\r\n    \"password\": \"cinda@1223\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api-erp-clg.ga/api/v1/login",
+							"protocol": "https",
+							"host": [
+								"api-erp-clg",
+								"ga"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 21 Sep 2022 02:55:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Ubuntu)"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "ci_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; HttpOnly"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "ci_session=n2hg0ugdp67tjpt29ha8hk15egpclvc7; expires=Wed, 21-Sep-2022 04:55:20 GMT; Max-Age=7200; path=/; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663728920.307899"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "https://api-erp-clg.ga/?debugbar_time=1663728920.307899"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 401,\n    \"message\": \"Credensial invalid\",\n    \"data\": {\n        \"error\": \"Unable to log you in. Please check your password.\"\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "logout",
@@ -54,7 +264,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "b233a8788404354efcfcc81244c27adfd4aa791e11aaec5c486483ee35868382",
+							"value": "104e0e8c1d85c5ed746847532f5b014b360182a6d6cd33a22bd9b786ac7e36cf",
 							"type": "string"
 						}
 					]
@@ -71,15 +281,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://192.168.0.238:8080/api/v1/logout",
-					"protocol": "http",
+					"raw": "https://api-erp-clg.ga/api/v1/logout",
+					"protocol": "https",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"238"
+						"api-erp-clg",
+						"ga"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -87,7 +294,98 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "80bf6770-eab4-4426-b186-ec55b4239e6a",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api-erp-clg.ga/api/v1/logout",
+							"protocol": "https",
+							"host": [
+								"api-erp-clg",
+								"ga"
+							],
+							"path": [
+								"api",
+								"v1",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 21 Sep 2022 02:56:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Ubuntu)"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS, PUT, DELETE, PATCH"
+						},
+						{
+							"key": "Cache-control",
+							"value": "no-store, max-age=0, no-cache"
+						},
+						{
+							"key": "Debugbar-Time",
+							"value": "1663729015.673220"
+						},
+						{
+							"key": "Debugbar-Link",
+							"value": "https://api-erp-clg.ga/?debugbar_time=1663729015.673220"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Anda telah logout\",\n    \"data\": []\n}"
+				}
+			]
 		}
 	]
 }
