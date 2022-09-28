@@ -16,7 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email_username\": \"jabrik\",\r\n    \"password\": \"jabrik@123\"\r\n}",
+					"raw": "{\r\n    \"email_username\": \"superadmin\",\r\n    \"password\": \"cinda@123\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -24,13 +24,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://192.168.0.75:8080/api/v1/login",
+					"raw": "http://192.168.0.54:8080/api/v1/login",
 					"protocol": "http",
 					"host": [
 						"192",
 						"168",
 						"0",
-						"75"
+						"54"
 					],
 					"port": "8080",
 					"path": [
