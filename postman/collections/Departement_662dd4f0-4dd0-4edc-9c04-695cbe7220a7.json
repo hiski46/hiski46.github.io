@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "6159d802-8255-42f5-a9d6-7bc1c957e933",
+		"name": "Departement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Departement",
+			"id": "e76fde05-f93a-4d48-b599-18284c061197",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "82e3d9be750666eba798eab5b32e2e1f4ccfe4dcc2690daf13125f87e39b3d03",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/departement",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"departement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Departement",
+			"id": "284ff614-c7a5-4ce8-b388-72700f497b71",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "82e3d9be750666eba798eab5b32e2e1f4ccfe4dcc2690daf13125f87e39b3d03",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Departement 2\",\r\n    \"division\":\"D-00000000002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/departement",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"departement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Departement",
+			"id": "574b2d50-2de2-40b8-8c02-14bd34d59d6b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "82e3d9be750666eba798eab5b32e2e1f4ccfe4dcc2690daf13125f87e39b3d03",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/departement/DEP-00000000003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"departement",
+						"DEP-00000000003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Departement",
+			"id": "ea4b01a2-59ea-4042-9e9a-28fdd5abfa83",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "82e3d9be750666eba798eab5b32e2e1f4ccfe4dcc2690daf13125f87e39b3d03",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Departement dua\",\r\n    \"division\":\"D-00000000002\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/departement/DEP-00000000003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"departement",
+						"DEP-00000000003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Departement",
+			"id": "1800090c-ec10-437e-9945-4535b772cf3c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "82e3d9be750666eba798eab5b32e2e1f4ccfe4dcc2690daf13125f87e39b3d03",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/departement/DEP-00000000003",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"departement",
+						"DEP-00000000003"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
