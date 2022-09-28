@@ -16,7 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email_username\": \"superadmin@gmail.com\",\r\n    \"password\": \"cinda@123\"\r\n}",
+					"raw": "{\r\n    \"email_username\": \"jabrik\",\r\n    \"password\": \"jabrik@123\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -24,12 +24,15 @@
 					}
 				},
 				"url": {
-					"raw": "https://api-erp-clg.ga/api/v1/login",
-					"protocol": "https",
+					"raw": "http://192.168.0.75:8080/api/v1/login",
+					"protocol": "http",
 					"host": [
-						"api-erp-clg",
-						"ga"
+						"192",
+						"168",
+						"0",
+						"75"
 					],
+					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -386,6 +389,18 @@
 					"body": "{\n    \"status\": 200,\n    \"message\": \"Anda telah logout\",\n    \"data\": []\n}"
 				}
 			]
+		},
+		{
+			"name": "New Request",
+			"id": "482d9c17-c8b0-4081-805f-cc327d523ff2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }

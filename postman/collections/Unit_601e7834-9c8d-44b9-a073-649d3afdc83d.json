@@ -148,11 +148,21 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "8349b8b78c02e7bd7dd53c1dc7c2d7560643c5127940328a4024178ba79c9c7c",
+							"type": "string"
+						}
+					]
+				},
 				"method": "PATCH",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"unit\":\"pcs\",\r\n    \"quantity\":\"1\"\r\n}",
+					"raw": "{\r\n    \"unit\":\"pcs1\",\r\n    \"quantity\": \"1\",\r\n    \"qtyfrom\": \"2\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -160,13 +170,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/unit/UN-00000000001",
+					"raw": "http://192.168.0.75:8080/api/v1/unit/UN-00000000001",
 					"protocol": "http",
 					"host": [
 						"192",
 						"168",
 						"0",
-						"57"
+						"75"
 					],
 					"port": "8080",
 					"path": [
@@ -186,11 +196,21 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "8349b8b78c02e7bd7dd53c1dc7c2d7560643c5127940328a4024178ba79c9c7c",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"unit\":\"Lusin\"\r\n}",
+					"raw": "{\r\n    \"unit\":\"Lusin\",\r\n    \"quantity\":10,\r\n    \"qtyfrom\":5,\r\n    \"description\": \"Lorem ipsum set amet\",\r\n    \"usercreate\": \"\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -198,13 +218,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/unit/",
+					"raw": "http://192.168.0.75:8080/api/v1/unit/",
 					"protocol": "http",
 					"host": [
 						"192",
 						"168",
 						"0",
-						"57"
+						"75"
 					],
 					"port": "8080",
 					"path": [

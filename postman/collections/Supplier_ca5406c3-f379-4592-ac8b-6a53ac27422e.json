@@ -18,7 +18,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "cc1ea26ababb7e4c9e5f8c1b12fb28927b09c9da772e31181b8dd2f6f2ee9b99",
+							"value": "712f1c61e4101fb01e0e663d1e86a078557599b05e9cd8ed4a03d6360b5b6f69",
 							"type": "string"
 						}
 					]
@@ -26,13 +26,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.0.54:8080/api/v1/supplier/",
+					"raw": "http://192.168.0.75:8080/api/v1/supplier/",
 					"protocol": "http",
 					"host": [
 						"192",
 						"168",
 						"0",
-						"54"
+						"75"
 					],
 					"port": "8080",
 					"path": [
@@ -286,16 +286,26 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "712f1c61e4101fb01e0e663d1e86a078557599b05e9cd8ed4a03d6360b5b6f69",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/suppliergroup",
+					"raw": "http://192.168.0.75:8080/api/v1/suppliergroup",
 					"protocol": "http",
 					"host": [
 						"192",
 						"168",
 						"0",
-						"57"
+						"75"
 					],
 					"port": "8080",
 					"path": [

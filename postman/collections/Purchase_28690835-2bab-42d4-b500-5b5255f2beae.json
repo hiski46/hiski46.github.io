@@ -2454,6 +2454,428 @@
 					"body": "{\n    \"status\": 200,\n    \"message\": \"Purchase Expense Detail berhasil dihapus\",\n    \"data\": []\n}"
 				}
 			]
+		},
+		{
+			"name": "Get All Purchase Order",
+			"id": "9a2c5182-c032-4bf9-a5d3-fee524eb7b58",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a5852af6fde6a8bf90229d1ba5864dce19b79398c75f7e970a3231f160a366b3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/purchaseorder",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Purchase Order",
+			"id": "ea87d7ff-ca1a-4794-809e-621cfc414a1e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a5852af6fde6a8bf90229d1ba5864dce19b79398c75f7e970a3231f160a366b3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"division\": \"D-00000000002\",\r\n    \"purchaser\":\"E-00000000002\",\r\n    \"supplierid\":\"SP-00000000001\",\r\n    \"shipment\":\"SHP-00000000001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/purchaseorder",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Purchase Order",
+			"id": "34f1cf29-4b5f-46f0-8115-0f9ac6748905",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a5852af6fde6a8bf90229d1ba5864dce19b79398c75f7e970a3231f160a366b3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/purchaseorder/PO-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseorder",
+						"PO-00000000001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Purchase Order",
+			"id": "9c8d919f-5586-4570-b4ac-d442d12f1ef1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a5852af6fde6a8bf90229d1ba5864dce19b79398c75f7e970a3231f160a366b3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"division\": \"D-00000000002\",\r\n    \"purchaser\":\"E-00000000002\",\r\n    \"supplierid\":\"SP-00000000001\",\r\n    \"shipment\":\"SHP-00000000001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/purchaseorder/PO-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseorder",
+						"PO-00000000001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Purchase Order",
+			"id": "677a17e6-ab91-4465-887f-a7d03bf0765f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a5852af6fde6a8bf90229d1ba5864dce19b79398c75f7e970a3231f160a366b3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/purchaseorder/PO-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseorder",
+						"PO-00000000001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Purchase Order Detail",
+			"id": "863fd70d-8521-49bd-9ae0-c28545686e8e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a5852af6fde6a8bf90229d1ba5864dce19b79398c75f7e970a3231f160a366b3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/purchaseorderdetail",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseorderdetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Purchase Order Detail",
+			"id": "71dd4e8c-aa6b-402f-a7c0-774411b1c511",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a5852af6fde6a8bf90229d1ba5864dce19b79398c75f7e970a3231f160a366b3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"purchaseid\":\"PO-00000000001\",\r\n    \"productid\":\"PR-00000000001\",\r\n    \"departement\":\"1\",\r\n    \"taxid\":\"1\",\r\n    \"purchaseidref\":\"PO-00000000001\",\r\n    \"unit\":\"UN-00000000001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/purchaseorderdetail",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseorderdetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Purchase Order Detail",
+			"id": "c11982f3-42d6-45c9-ad82-3401101bd072",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a5852af6fde6a8bf90229d1ba5864dce19b79398c75f7e970a3231f160a366b3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/purchaseorderdetail/POD-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseorderdetail",
+						"POD-00000000001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upadte Purchase Order Detail",
+			"id": "06c5e36f-2311-4bb9-9fc5-a80ad8d4bb85",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a5852af6fde6a8bf90229d1ba5864dce19b79398c75f7e970a3231f160a366b3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"purchaseid\":\"PO-00000000001\",\r\n    \"productid\":\"PR-00000000001\",\r\n    \"departement\":\"1\",\r\n    \"taxid\":\"1\",\r\n    \"purchaseidref\":\"PO-00000000001\",\r\n    \"unit\":\"UN-00000000001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/purchaseorderdetail/POD-00000000001",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseorderdetail",
+						"POD-00000000001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Purchase Order Detail",
+			"id": "a9683845-83f1-4863-a1f1-9fc0b14667e8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a5852af6fde6a8bf90229d1ba5864dce19b79398c75f7e970a3231f160a366b3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/purchaseorderdetail/POD-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"purchaseorderdetail",
+						"POD-00000000002"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
