@@ -181,11 +181,21 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "348987461f7a4990ee4967392d2343f73f9fc1082cef9fafcffa80bd63f950c4",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"sparta\",\r\n    \"suppliergroup\":\"PR-00000000001\"\r\n}",
+					"raw": "{\r\n    \"name\":\"siapa aja3\",\r\n    \"suppliergroup\":\"PR-00000000001\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -193,20 +203,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/supplier/",
-					"protocol": "http",
+					"raw": "https://api-erp-clg.ga/api/v1/supplier",
+					"protocol": "https",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"57"
+						"api-erp-clg",
+						"ga"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
-						"supplier",
-						""
+						"supplier"
 					]
 				}
 			},

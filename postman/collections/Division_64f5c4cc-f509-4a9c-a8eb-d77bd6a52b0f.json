@@ -119,11 +119,21 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "434cc15907f9e8b44b5d9f0479ee20d8b558e6b36b12009b78f6f459e407fcff",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"description\":\"Division 3\",\r\n    \"retainedearningacc\":\"108.001\",\r\n    \"exchangerateacc\":\"101.002\"\r\n}",
+					"raw": "{\r\n    \"description\":\"Division 4\",\r\n    \"retainedearningacc\":\"108.001\",\r\n    \"exchangerateacc\":\"101.002\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -131,20 +141,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/division/",
-					"protocol": "http",
+					"raw": "https://api-erp-clg.ga/api/v1/division",
+					"protocol": "https",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"57"
+						"api-erp-clg",
+						"ga"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
-						"division",
-						""
+						"division"
 					]
 				}
 			},

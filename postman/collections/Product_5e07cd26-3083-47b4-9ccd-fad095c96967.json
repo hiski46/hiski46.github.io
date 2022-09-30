@@ -2074,6 +2074,45 @@
 					"body": "{\n    \"status\": 404,\n    \"message\": \"Produk dengan id PR-00000000002 tidak ditemukan atau sudah dihapus\",\n    \"data\": []\n}"
 				}
 			]
+		},
+		{
+			"name": "Get All Product by Group",
+			"id": "a744e8b8-28d7-42d2-a8dd-07259e4d52fa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "b2b664d4569c6a212eb5808b263fa4f2aff2365e232029815cbbce6688603267",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.54:8080/api/v1/productbygroup/PG-00000000002",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"54"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productbygroup",
+						"PG-00000000002"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

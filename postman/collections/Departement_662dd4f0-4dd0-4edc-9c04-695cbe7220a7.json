@@ -17,7 +17,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "82e3d9be750666eba798eab5b32e2e1f4ccfe4dcc2690daf13125f87e39b3d03",
+							"value": "434cc15907f9e8b44b5d9f0479ee20d8b558e6b36b12009b78f6f459e407fcff",
 							"type": "string"
 						}
 					]
@@ -25,19 +25,53 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.0.54:8080/api/v1/departement",
-					"protocol": "http",
+					"raw": "{{base_url}}/departement",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"54"
+						"{{base_url}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
-						"v1",
 						"departement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Departement by Division id",
+			"id": "085fa314-6ef9-4e64-84fa-3f81a546d28c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "434cc15907f9e8b44b5d9f0479ee20d8b558e6b36b12009b78f6f459e407fcff",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\":[\r\n        {\r\n            \"kode\":\"\",\r\n            \"nama\":\"\"\r\n        \r\n        },\r\n        {\r\n            \"kode\":\"\",\r\n            \"nama\":\"\"\r\n        \r\n        }\r\n    ]\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/departementbydivision/D-00000000002",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"departementbydivision",
+						"D-00000000002"
 					]
 				}
 			},

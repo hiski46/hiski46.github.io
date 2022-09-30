@@ -15,18 +15,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/purchase/",
-					"protocol": "http",
+					"raw": "{{base_url}}/purchase/",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"57"
+						"{{base_url}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
-						"v1",
 						"purchase",
 						""
 					]
@@ -230,12 +223,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"division\": \"1\",\r\n    \"purchaser\": \"1\",\r\n    \"supplierid\": \"SP-00000000001\",\r\n    \"shipment\": \"1\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					"raw": "{\r\n    \"barang\":                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \r\n}"
 				},
 				"url": {
 					"raw": "http://192.168.0.57:8080/api/v1/purchase/",

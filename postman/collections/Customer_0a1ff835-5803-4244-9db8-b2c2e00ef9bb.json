@@ -12,21 +12,24 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a64653768af28a83bbc076439498670ae1282ca951a359e43221b6c1fabf963a",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/customergroup",
-					"protocol": "http",
+					"raw": "{{base_url}}/customergroup",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"57"
+						"{{base_url}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
-						"v1",
 						"customergroup"
 					]
 				}
@@ -1147,6 +1150,38 @@
 					"body": "{\n    \"status\": 200,\n    \"message\": \"Customer berhasil dihapus\",\n    \"data\": []\n}"
 				}
 			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "8349b8b78c02e7bd7dd53c1dc7c2d7560643c5127940328a4024178ba79c9c7c",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "f66ecae0-6801-4738-80a4-f479b20a0ec2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0759ac28-b576-439c-9adc-1e5c40ad635a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
