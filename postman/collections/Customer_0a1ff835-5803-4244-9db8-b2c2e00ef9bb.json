@@ -123,17 +123,59 @@
 			]
 		},
 		{
+			"name": "Get All Group by Customer Group",
+			"id": "96187f77-280b-42a4-a766-554dca8dab4b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "b5e21abc9aa8d7ee470b762b90531522d4dabd01d257bc53eb1dce4ba149da77",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/customerbygroup/c11",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"customerbygroup",
+						"c11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Create Customer",
 			"id": "9e9570eb-c667-407c-81bc-d748ca2d226b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "dd3c2ee688e73e1aa0df694b2f5fcd037f948848e193903189b4e99d9d44f2e2",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"description\" : \"Group Customer 1\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.001\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
+					"raw": "{\r\n    \"description\" : \"Group Customer 11\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.001\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -141,18 +183,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/customergroup",
-					"protocol": "http",
+					"raw": "{{base_url}}/customergroup",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"57"
+						"{{base_url}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
-						"v1",
 						"customergroup"
 					]
 				}
@@ -819,23 +854,26 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6798563f8d07d04486c9fe8e092da6d4d9ee4a1dae248396a1299d1ee6f7d3bd",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/customer/CST-00000000001",
-					"protocol": "http",
+					"raw": "{{base_url}}/customer/C001",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"57"
+						"{{base_url}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
-						"v1",
 						"customer",
-						"CST-00000000001"
+						"C001"
 					]
 				}
 			},
