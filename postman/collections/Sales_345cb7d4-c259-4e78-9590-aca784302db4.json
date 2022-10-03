@@ -1802,6 +1802,38 @@
 					"body": "{\n    \"status\": 200,\n    \"message\": \"Sales berhasil dihapus\",\n    \"data\": []\n}"
 				}
 			]
+		},
+		{
+			"name": "Get All Salesman By Salesman Group",
+			"id": "5cd00fd4-fca9-417a-923e-fa259320a372",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7148466be5154dba8969da7da34e572b0a790032a905a2108eb6df46e3c32201",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/salesmanbygroup/SLSG-00000000001",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"salesmanbygroup",
+						"SLSG-00000000001"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

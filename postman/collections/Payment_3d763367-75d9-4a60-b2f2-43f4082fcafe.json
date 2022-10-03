@@ -180,6 +180,37 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get Kind Payment Type",
+			"id": "bc877d64-f291-4ce0-ab06-233a8e2daf5c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7148466be5154dba8969da7da34e572b0a790032a905a2108eb6df46e3c32201",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/kind",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"kind"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
