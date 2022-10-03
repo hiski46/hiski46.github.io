@@ -17,7 +17,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "a64653768af28a83bbc076439498670ae1282ca951a359e43221b6c1fabf963a",
+							"value": "dd3c2ee688e73e1aa0df694b2f5fcd037f948848e193903189b4e99d9d44f2e2",
 							"type": "string"
 						}
 					]
@@ -175,7 +175,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"description\" : \"Group Customer 11\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.001\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
+					"raw": "{\r\n    \"description\" : \"Group Customer 191\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.001\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -626,21 +626,24 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6798563f8d07d04486c9fe8e092da6d4d9ee4a1dae248396a1299d1ee6f7d3bd",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/customer",
-					"protocol": "http",
+					"raw": "{{base_url}}/customer",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"57"
+						"{{base_url}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
-						"v1",
 						"customer"
 					]
 				}
@@ -964,11 +967,21 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6798563f8d07d04486c9fe8e092da6d4d9ee4a1dae248396a1299d1ee6f7d3bd",
+							"type": "string"
+						}
+					]
+				},
 				"method": "PATCH",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Customer satu\",\r\n    \"customergroup\": \"CSTG-00000000001\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.002\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Customer dua\",\r\n    \"customergroup\": \"CSTG-00000000001\",\r\n    \"receivableacc\": \"104.002\",\r\n    \"rewardacc\": \"601.002\",\r\n    \"downpaymentacc\": \"20.005\",\r\n    \"salesdiscacc\": \"409.002\",\r\n    \"gainlossreceivableacc\": \"701.005\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "7dcc6b75-0586-4aaf-bf6c-c2f7af2caa13",
+		"name": "Payment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Payment Type",
+			"id": "f9b86d21-26f6-417f-85d1-230b7fa1ff56",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7148466be5154dba8969da7da34e572b0a790032a905a2108eb6df46e3c32201",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/paymenttype",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"paymenttype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Payment Type",
+			"id": "02449c08-7323-4338-9eb5-93bcdc0a068f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7148466be5154dba8969da7da34e572b0a790032a905a2108eb6df46e3c32201",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"GoPay\",\r\n    \"paymentacc\":\"101.001\",\r\n    \"cashdiscacc\":\"101.001\",\r\n    \"expenseacc\":\"101.001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/paymenttype",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"paymenttype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Payment Type",
+			"id": "ffd302ec-89df-46f0-96b4-5c4f9d328cba",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7148466be5154dba8969da7da34e572b0a790032a905a2108eb6df46e3c32201",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/paymenttype/PYT-00000000002",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"paymenttype",
+						"PYT-00000000002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Payment Type",
+			"id": "f810d8ec-fca6-477b-930a-c6e03a04f89b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7148466be5154dba8969da7da34e572b0a790032a905a2108eb6df46e3c32201",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Go-Pay\",\r\n    \"paymentacc\":\"101.001\",\r\n    \"cashdiscacc\":\"101.001\",\r\n    \"expenseacc\":\"101.001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/paymenttype/PYT-00000000002",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"paymenttype",
+						"PYT-00000000002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Payment Type",
+			"id": "54113cc4-e693-40d8-8e1c-beed93815f78",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7148466be5154dba8969da7da34e572b0a790032a905a2108eb6df46e3c32201",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/paymenttype/PYT-00000000002",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"paymenttype",
+						"PYT-00000000002"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
