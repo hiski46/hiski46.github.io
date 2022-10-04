@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "0b637127-07be-4fa8-a7b0-9b4d4a562fb0",
+		"name": "Taxes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Taxes",
+			"id": "9863562b-f31e-48be-911d-d273a9be6e95",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "01f0943c98836167669c02a6ea065791d8e50ede8f5385a6b141a37fcdcec1f0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/taxes",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"taxes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Taxes",
+			"id": "02bc1fc3-03dd-44a2-aee6-88c8a6fd85fc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "01f0943c98836167669c02a6ea065791d8e50ede8f5385a6b141a37fcdcec1f0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Uang Takut\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/taxes",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"taxes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Taxes",
+			"id": "0e0f0533-9776-47fd-b428-f7e6880c8d0f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "01f0943c98836167669c02a6ea065791d8e50ede8f5385a6b141a37fcdcec1f0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/taxes/TAX-00000000005",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"taxes",
+						"TAX-00000000005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Taxes",
+			"id": "b2ca2e46-12e7-406b-8eb9-d0d71733c726",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "01f0943c98836167669c02a6ea065791d8e50ede8f5385a6b141a37fcdcec1f0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Uang Aman KAli\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/taxes/TAX-00000000005",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"taxes",
+						"TAX-00000000005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Taxes",
+			"id": "3a92f4a9-0bb6-40f5-b757-294a2ea7e7a0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "01f0943c98836167669c02a6ea065791d8e50ede8f5385a6b141a37fcdcec1f0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/taxes/TAX-00000000005",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"taxes",
+						"TAX-00000000005"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

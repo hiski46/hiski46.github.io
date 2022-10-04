@@ -1725,11 +1725,21 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a9747a0dd66379b71937ea98afa6ab8930bdd0dc7f2f1d2ea52fd84b081315a5",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Pepsodent Dental Expert\",\r\n    \"groupunit\":\"UN-00000000003\",\r\n    \"defunit\":\"UN-00000000003\",\r\n    \"productgroup\":\"PG-00000000002\",\r\n    \"supplier\":\"SP-00000000001\",\r\n    \"brand\":\"PB-00000000003\"\r\n}",
+					"raw": "{\r\n    \"name\":\"Pepsodent Mint\",\r\n    \"groupunit\":\"UN-00000000003\",\r\n    \"defunit\":\"UN-00000000003\",\r\n    \"productgroup\":\"PG-00000000002\",\r\n    \"supplier\":\"SP-00000000001\",\r\n    \"brand\":\"PB-00000000003\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1737,20 +1747,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/product/",
-					"protocol": "http",
+					"raw": "https://api-erp-clg.ga/api/v1/product",
+					"protocol": "https",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"57"
+						"api-erp-clg",
+						"ga"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
-						"product",
-						""
+						"product"
 					]
 				}
 			},

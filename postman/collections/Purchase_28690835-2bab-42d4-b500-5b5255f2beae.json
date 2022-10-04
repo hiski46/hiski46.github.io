@@ -229,27 +229,34 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "01f0943c98836167669c02a6ea065791d8e50ede8f5385a6b141a37fcdcec1f0",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"barang\":                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \r\n}"
+					"raw": "{\r\n    \"division\": \"D-00000000013\",\r\n    \"purchaser\": \"E-00000000004\",\r\n    \"supplierid\": \"SP-00000000035\",\r\n    \"shipment\": \"SHP-00000000002\",\r\n    \"purchasedetail\": [\r\n        {\r\n            \"purchaseid\": \"\",\r\n            \"productid\": \"\",\r\n            \"departement\": \"\",\r\n            \"unit\": \"\",\r\n            \"taxid\": \"\",\r\n            \"purchaseidref\": \"\",\r\n            \"price\": \"\"\r\n        },\r\n        {\r\n            \"purchaseid\": \"\",\r\n            \"productid\": \"\",\r\n            \"departement\": \"\",\r\n            \"unit\": \"\",\r\n            \"taxid\": \"\",\r\n            \"purchaseidref\": \"\",\r\n            \"price\": \"\"\r\n        },\r\n        {\r\n            \"purchaseid\": \"\",\r\n            \"productid\": \"\",\r\n            \"departement\": \"\",\r\n            \"unit\": \"\",\r\n            \"taxid\": \"\",\r\n            \"purchaseidref\": \"\",\r\n            \"price\": \"\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
-					"raw": "http://192.168.0.57:8080/api/v1/purchase/",
-					"protocol": "http",
+					"raw": "{{base_url}}/purchase",
 					"host": [
-						"192",
-						"168",
-						"0",
-						"57"
+						"{{base_url}}"
 					],
-					"port": "8080",
 					"path": [
-						"api",
-						"v1",
-						"purchase",
-						""
+						"purchase"
 					]
 				}
 			},
