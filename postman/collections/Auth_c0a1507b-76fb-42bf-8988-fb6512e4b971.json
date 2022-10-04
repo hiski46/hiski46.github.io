@@ -395,5 +395,36 @@
 			},
 			"response": []
 		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "f1ec691f-577f-43ea-bf5d-1485bc42b948",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "fbab43cf-f7c2-4ada-8aa6-1e74e3fcfe61",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "12347541-6cc1-4e0d-87fe-4e4fff370bbd",
+			"key": "base_url",
+			"value": "https://api-erp-clg.ga/api/v1/",
+			"type": "string",
+			"disabled": true
+		}
 	]
 }
